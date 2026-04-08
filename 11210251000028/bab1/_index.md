@@ -1,7 +1,7 @@
 # IMPLEMENTASI MODEL NETWORK BOUND DISK ENCRYPTION UNTUK PENINGKATAN KEAMANAN ARSIP DIGITAL DI PT X
 
 ## BAB 1
-Latar belakang
+## Latar belakang
 
 Menurut Undang – Undang No.43 Tahun 2009 pasal 1 ayat (2), definisi arsip merupakan rekaman kegiatan atau peristiwa arsip dalam berbagai bentuk dan media sesuai dengan perkembangan teknologi informasi dan komunikasi yang dibuat dan diterima oleh lembaga negara, pemerintahan daerah, lembaga pendidikan, perusahaan, organisasi politik, organisasi kemasyarakatan, dan perorangan dalam pelaksanaan kehidupan bermasyarakat, berbangsa, dan bernegara.
 Menurut Peraturan Kepala Arsip Nasional Republik Indonesia No.7 Tahun 2016 tentang petunjuk pelaksanaan sistem klasifikasi keamanan dan akses arsip dinamis, klasifikasi keamanan arsip adalah kategori kerahasiaan informasi arsip berdasarkan pada tingkat keseriusan dampak yang ditimbulkannya terhadap kepentingan dan keamanan negara, masyarakat dan perorangan. Untuk mengklasifikasikan akses arsip, arsip dapat dikategorikan berdasarkan bagaimana arsip dapat digunakan untuk tujuan tertentu. Program pengamanan arsip melindungi data dan arsip secara fisik berdasarkan kategori keamanannya (Khariroh, 2021).
@@ -20,11 +20,15 @@ Namun, penerapan NBDE juga memiliki tantangan tertentu, khususnya dalam hal desa
 PT X sebagai subjek penelitian memiliki kebutuhan khusus yang menjadikan NBDE relevan untuk diterapkan. Infrastruktur digital perusahaan melibatkan sistem penyimpanan terpusat untuk arsip media, yang diakses oleh banyak unit kerja melalui jaringan internal. Hal ini menimbulkan tantangan dalam menjaga kontrol akses dan otorisasi pengguna. Dengan NBDE, sistem penyimpanan dapat dibatasi hanya untuk perangkat yang berada dalam jaringan resmi perusahaan. Oleh karena itu, model yang diusulkan diharapkan dapat meningkatkan keamanan arsip digital perusahaan secara signifikan.
 Berdasarkan latar belakang yang telah dijelaskan diatas, maka penulis ingin melakukan penelitian lebih lanjut terkait keamanan arsip digital pada lapisan fisik media penyimpanan yang ada di PT X. Adapun judul dalam penelitian ini adalah Implementasi Model Network Bound Disk Encryption Untuk Peningkatan Keamanan Arsip Digital di PT X.
 
-Identifikasi masalah
+## Identifikasi masalah
+Berdasarkan uraian pada latar belakang yang sudah dijelaskan bahwa terdapat beberapa masalah yang teridentifikasi. Identifikasi masalah dalam penelitian sebagai berikut: 
+1. 
+2. 
+3. 
+4. 
+5. 
 
-Berdasarkan uraian pada latar belakang yang sudah dijelaskan bahwa, belum adanya model perancangan Network Bound Disk Encryption (NBDE) yang terstruktur dan sesuai dengan kebutuhan infrastruktur PT X. Kondisi ini menimbulkan potensi kesalahan dalam implementasi keamanan arsip digital, seperti ketidakefisienan manajemen kunci, ketergantungan terhadap server tunggal, serta belum optimalnya integrasi antara sistem enkripsi LUKS dengan otorisasi jaringan perusahaan.
-
-# Batasan masalah
+## Batasan masalah
 
 untuk memperjelas ruang lingkup penelitian agar lebih terarah dan tidak melebar sehingga fokus pada tujuan utama yang ingin dicapai. Dengan adanya batasan masalah, penelitian dapat dilakukan secara lebih sistematis, mendalam, dan sesuai dengan kebutuhan perusahaan.
 
@@ -34,26 +38,26 @@ Batasan masalah dalam penelitian ini adalah sebagai berikut:
 3. Ruang lingkup penelitian hanya mencakup perancangan model NBDE, tanpa membahas aspek implementasi infrastruktur jaringan secara detail di seluruh unit perusahaan.
 4. Pengunaan sistem operasi Archlinux
 
-# Rumusan Masalah
+## Rumusan Masalah
 
 Adapun rumusan masalah berdasarkan batasan masalah dan latar belakang yang telah dijelaskan di atas, maka peneliti merumuskan masalah penelitian ini yaitu “Bagaimana rancangan model enkripsi perangkat penyimpanan dengan menggunakan Network Bound Disk Encryption Untuk Peningkatan Keamanan Arsip Digital di PT X.”
 
-# Tujuan dan Manfaat Penelitian
+## Tujuan dan Manfaat Penelitian
 
 Adapun tujuan dan manfaat penelitian yang ingin dicapai oleh peneliti berdasarkan permasalahan yang telah dijelaskan atas adalah sebagai berikut:
 
-## Tujuan Penelitian
+### Tujuan Penelitian
 Tujuan penelitian ini adalah untuk mengetahui model enkripsi perangkat penyimpanan dengan menggunakan Network Bound Disk Encryption untuk meningkatkan keamanan arsip digital.
 
-## Manfaat Penelitian
+### Manfaat Penelitian
 
-### Manfaat teoritis  
+#### Manfaat teoritis  
 1. Penelitian ini memberikan kontribusi dalam pengembangan konsep keamanan arsip digital, khususnya yang berkaitan dengan penerapan prinsip CIA Triad pada perangkat penyimpanan arsip digital.
 2. Penelitian ini dapat memperluas penerapan metode design and development research dalam bidang keamanan arsip digital.
 3. Penelitian ini diharapkan dapat memberi wawasan pengetahuan mengenai model pengamanan pada perangkat keras yang digunakan untuk menyimpan data digital dan dapat dijadikan sumber rujukan untuk penelitian selanjutnya.                                     
 
 
-### Manfaat Praktis
+#### Manfaat Praktis
 1. Dapat menambah pengalaman langsung serta wawasan terkait perancangan model dan implementasi enkripsi perangkat penyimpanan dengan menggunakan Networks Bound Disk Encryption. 
 2. Penelitian ini dapat memberikan kontribusi dalam memberikan solusi terhadap permasalahan dekripsi LUKS.
 3. Dapat memberikan masukan bagi PT Lektor Media Utama dalam meningkatkan keamanan pada perangkat penyimpanan arsip digital. 
