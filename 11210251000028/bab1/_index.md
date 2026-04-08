@@ -24,19 +24,19 @@ Identifikasi masalah
 
 Berdasarkan uraian pada latar belakang yang sudah dijelaskan bahwa, belum adanya model perancangan Network Bound Disk Encryption (NBDE) yang terstruktur dan sesuai dengan kebutuhan infrastruktur PT X. Kondisi ini menimbulkan potensi kesalahan dalam implementasi keamanan arsip digital, seperti ketidakefisienan manajemen kunci, ketergantungan terhadap server tunggal, serta belum optimalnya integrasi antara sistem enkripsi LUKS dengan otorisasi jaringan perusahaan.
 
-Batasan masalah
+# Batasan masalah
 
 untuk memperjelas ruang lingkup penelitian agar lebih terarah dan tidak melebar sehingga fokus pada tujuan utama yang ingin dicapai. Dengan adanya batasan masalah, penelitian dapat dilakukan secara lebih sistematis, mendalam, dan sesuai dengan kebutuhan perusahaan.
 
 Batasan masalah dalam penelitian ini adalah sebagai berikut:
-Penelitian difokuskan pada keamanan arsip digital yang disimpan dalam sistem penyimpanan internal perusahaan.
-Model enkripsi yang diteliti terbatas pada penerapan Network Bound Disk Encryption (NBDE) dengan kombinasi metode enkripsi LUKS.
-Ruang lingkup penelitian hanya mencakup perancangan model NBDE, tanpa membahas aspek implementasi infrastruktur jaringan secara detail di seluruh unit perusahaan.
-Pengunaan sistem operasi Archlinux
+1. Penelitian difokuskan pada keamanan arsip digital yang disimpan dalam perangkat penyimpanan internal perusahaan.
+2. Model enkripsi yang diteliti terbatas pada penerapan Network Bound Disk Encryption (NBDE) dengan kombinasi metode enkripsi LUKS.
+3. Ruang lingkup penelitian hanya mencakup perancangan model NBDE, tanpa membahas aspek implementasi infrastruktur jaringan secara detail di seluruh unit perusahaan.
+4. Pengunaan sistem operasi Archlinux
 
-Rumusan Masalah
+# Rumusan Masalah
 
-Adapun rumusan masalah berdasarkan batasan masalah dan latar belakang yang telah dijelaskan di atas, maka peneliti merumuskan masalah penelitian ini yaitu “Bagaimana rancangan model enkripsi media penyimpanan dengan menggunakan Network Bound Disk Encryption Untuk Peningkatan Keamanan Arsip Digital di PT X.”
+Adapun rumusan masalah berdasarkan batasan masalah dan latar belakang yang telah dijelaskan di atas, maka peneliti merumuskan masalah penelitian ini yaitu “Bagaimana rancangan model enkripsi perangkat penyimpanan dengan menggunakan Network Bound Disk Encryption Untuk Peningkatan Keamanan Arsip Digital di PT X.”
 
 # Tujuan dan Manfaat Penelitian
 
