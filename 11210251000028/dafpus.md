@@ -16,4 +16,10 @@ Khariroh, U. (2021). Analisis Sistem Klasifikasi Keamanan dan Akses Arsip Dinami
 
 8. Abu Bakar, R., & Kijsirikul, B. (2023). Enhancing network visibility and security with advanced port scanning techniques. Sensors, 23(17), 7541. https://doi.org/10.3390/s23177541.
 
-9. 
+9. Richey, R. C., & Klein, J. D. (2007). Design and Development Research. Lawrence Erlbaum Associates,Inc.
+
+10. Asrulla, Risnita, Jailani, M. S., & Jeka, F. (2023). Populasi dan Sampling (Kuantitatif), Serta Pemilihan Informan Kunci (Kualitatif) dalam Pendekatan Praktis. Jurnal Pendidikan Tambusai, 7(3), 26320 - 26332. https://doi.org/10.31004/jptam.v7i3.10836
+
+11. Ardiansyah, Risnita, & Jailani, M. S. (2023). Teknik Pengumpulan Data dan Instrumen Penelitian Ilmiah Pendidikan Pada Pendekatan Kualitatif dan Kuantitatif. Ihsan: Jurnal Pendidikan Islam, 1(2), 1 - 8. https:ss//doi.org/10.61104/ihsan.v1i2.57
+
+12. 
