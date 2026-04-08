@@ -25,7 +25,11 @@ Deskripsi Prototype
 ## Tempat Penelitian
 Penelitian ini dilakukan di PT Lektor Media Utama yang berlokasi di Tokopedia Tower Lantai 22 Unit F, Jl. Prof. Dr. Satrio Kav.11, RT.003, Karet Semanggi, Kecamatan Setiabudi, Kota Jakarta Selatan.
 ## Jadwal Penelitian
-| No | september   | oktober | november   | desember | januari   | februari | januari   | februari |
-| ---| ----------- | --------|
-| Header | Title |
-| Paragraph | Text |
+| No | kegiatan            |september | oktober | november | desember | januari | februari | maret | april | mei    | Juni  |
+| ---| --------------------|----------| --------| ---------| ---------| --------| ---------| ------| ------| -------| ------|
+| 1  | Observasi Awal      | ceklis   |         |          |          |         |          |       |       |        |       | 
+| 2  | Penyusunan Proposal | ceklis   | ceklis  | ceklis   |          |         |          |       |       |        |       |
+| 3  | Seminar Proposal    |          |         | ceklis   |          |         |          |       |       |        |       | 
+| 4  | Bimbingan Skripsi   |          |         |          |          | ceklis  | ceklis   | ceklis| ceklis| ceklis |       |
+| 5  | Penyusunan Skripsi  |          |         |          |          | ceklis  | ceklis   | ceklis| ceklis|  ceklis|       | 
+| 6  | Sidang Skripsi      |          |         |          |          |         |          |       |       |        | ceklis|
