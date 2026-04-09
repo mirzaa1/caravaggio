@@ -39,36 +39,58 @@ Dengan semakin meningkatnya volume data dan permintaan pada sistem otomasi perpu
 
 ## Identifikasi Masalah
 
-Peneliti melihat tidak adanya sistem otomasi perpustakaan yang stabil dalam menghadapi lonjakan permintaan buku digital yang tinggi di PT Lektor Media Utama adalah masalah utama penelitian ini, seperti yang ditunjukkan dalam latar belakang.
+Peneliti melihat tidak adanya sistem otomasi perpustakaan yang stabil dalam menghadapi lonjakan permintaan buku digital yang tinggi di Organisasi N adalah masalah utama penelitian ini, seperti yang ditunjukkan dalam latar belakang.
+
+1. Belum adanya redundansi peladen (server cadangan) yang menyebabkan seluruh layanan perpustakaan digital di Organisasi N akan berhenti total jika peladen utama mengalami gangguan teknis atau kerusakan (hardware).
+2. Terjadinya kelambatan waktu pemuatan (loading) katalog dan pengunduhan buku digital saat jam sibuk, yang menghambat efisiensi waktu pemustaka sesuai dengan prinsip hukum keempat Noruzi (Save the time of the Web user).
+3. Penumpukan antrean permintaan (request) hanya pada satu titik akses, sehingga sumber daya infrastruktur TI yang ada di Organisasi N tidak terpakai secara optimal dan merata.
 
 ## Batasan Masalah
 
 Berdasarkan identifikasi masalah yang telah dipaparkan, maka batasan masalah dalam penelitian ini adalah:
 
-1. Rancangan load balancer untuk sistem otomasi perpustakaan.
-2. Penelitian ini tidak membahas secara detail implementasi teknis dari load balancer, tetapi lebih pada perancangan konseptual dan algoritma load balancing yang efektif.
-3. Penelitian ini dilakukan di PT Lektor Media Utama.
+1. Penelitian ini hanya berfokus pada implementasi NGINX sebagai perangkat lunak load balancer
+2. Analisis performa dibatasi pada penggunaan algoritma load balancing tertentu, seperti Round Robin atau Least Connections, untuk mendistribusikan trafik di Organisasi N.
+3. Sistem yang diuji adalah Sistem Otomasi Perpustakaan (SLIMS) yang digunakan di Organisasi N, khususnya pada fungsi pencarian katalog (OPAC) dan akses buku digital.
 
 ## Rumusan Masalah
 
-Berdasarkan latar belakang dan batasan masalah yang telah dipaparkan, maka rumusan masalah dalam penelitian ini yaitu “Bagaimana rancangan load balancer meningkatkan ketersediaan buku digital pada sistem otomasi perpustakaan di PT Lektor Media Utama”.
+Berdasarkan identifikasi masalah yang telah ditetapkan, maka rumusan masalah dalam penelitian ini adalah:
+
+1. Bagaimana implementasi arsitektur load balancing menggunakan NGINX di Organisasi N untuk mengeliminasi risiko single point of failure (titik kegagalan tunggal) pada sistem otomasi perpustakaan?
+2. Bagaimana pengaruh penerapan load balancing berbasis NGINX terhadap peningkatan kecepatan waktu tanggap (response time) layanan sesuai dengan hukum keempat Noruzi (Save the time of the Web user)?
+3. Bagaimana efektivitas mekanisme distribusi beban kerja (workload distribution) dalam menyeimbangkan trafik permintaan buku digital di antara klaster peladen (server cluster) pada Organisasi N?
 
 ## Tujuan Penelitian
 
-Tujuan dari penelitian ini adalah merancang arsitektur load balancer yang efektif dan efisien untuk mendukung sistem otomasi perpustakaan yang memiliki ketersediaan buku digital yang tinggi pada PT Lektor Media Utama.
+Menerapkan dan menganalisis sistem load balancing berbasis NGINX pada sistem otomasi perpustakaan di Organisasi N untuk menghilangkan risiko single point of failure serta meningkatkan efisiensi waktu akses pemustaka sesuai dengan prinsip hukum keempat Noruzi (Save the time of the Web user).
 
 ## Manfaat Penelitian
 
 Adapun tujuan dan manfaat penelitian yang ingin dicapai oleh peneliti berdasarkan permasalahan yang telah dijelaskan sebelumnya adalah sebagai berikut: 
 
-a. Manfaat Teoritis
-Penelitian ini diharapkan dapat memberi wawasan pengetahuan mengenai model untuk meningkatkan ketersediaan buku digital menggunakan load balancer dan dapat dijadikan sumber rujukan untuk penelitian selanjutnya.
+1. Manfaat Teoritis
+a. Pengembangan Ilmu Perpustakaan dan Informasi: Memberikan kontribusi pemikiran mengenai penerapan konsep load balancing sebagai bentuk modernisasi dari The Five Laws of the Web milik Alireza Noruzi, khususnya dalam menjaga keberlangsungan layanan informasi.
+b. Pengayaan Literatur Infrastruktur Digital: Menjadi referensi akademis mengenai relevansi teori efisiensi waktu (Hukum ke-4 Ranganathan/Noruzi) dalam mengatasi hambatan teknis seperti server overload pada ekosistem perpustakaan digital.
+c. Model Transformasi Teknologi: Memberikan landasan teoritis tentang bagaimana arsitektur high availability (ketersediaan tinggi) dapat mendukung filosofi perpustakaan sebagai "organisme yang tumbuh" (The Web is a growing organism) di tengah lonjakan data digital.
 
-b. Manfaat Praktis 
-1. Dapat memberikan solusi atau rekomendasi yang dapat diterapkan untuk mengatasi permasalahan yang diteliti.
-2. Dapat memberikan masukan bagi PT Lektor Media Utama dalam meningkatkan ketersediaan buku digital yang tinggi pada sistem otomasi perpustakaan.
+2. Manfaat Praktis
+a. Bagi Organisasi N: Menghasilkan rekomendasi teknis dan solusi konkret untuk menciptakan sistem otomasi perpustakaan yang stabil, responsif, dan bebas dari risiko single point of failure saat terjadi lonjakan permintaan buku digital.
+b. Bagi Pengelola Teknologi Informasi: Memberikan panduan praktis dalam mengonfigurasi NGINX sebagai load balancer yang efisien dan ekonomis (berbasis open source) untuk mengoptimalkan sumber daya server yang ada di perpustakaan.
 
 ## Tinjauan Penelitian Terdahulu
+
+Beberapa penelitian terdahulu yang relevan dengan rancangan load balancer pada sistem otomasi perpustakaan adalah sebagai berikut:
+
+Pertama, penelitian yang dilakukan oleh Pratama dan Wijaya (2021) berfokus pada optimasi web server menggunakan NGINX untuk menurunkan beban kerja CPU. Hasil penelitian ini menunjukkan bahwa distribusi trafik yang merata dapat mencegah server dari kondisi kelebihan beban (overload). Kesamaan dengan penelitian ini adalah penggunaan perangkat lunak NGINX sebagai instrumen utama load balancing. Namun, perbedaannya terletak pada objek penelitian, di mana Pratama dan Wijaya melakukan studi pada platform e-commerce, sementara penelitian ini secara spesifik diimplementasikan pada sistem otomasi perpustakaan untuk akses buku digital di Organisasi N.
+
+Kedua, Saputra (2022) menganalisis ketersediaan tinggi (high availability) pada server repositori kampus dengan algoritma Round Robin. Hasilnya membuktikan bahwa redundansi server sangat efektif dalam menjaga ketersediaan data secara kontinu. Persamaan penelitian tersebut dengan penelitian ini terletak pada tujuannya untuk mencapai ketersediaan layanan yang stabil melalui pengujian simulasi lonjakan trafik. Perbedaannya, Saputra menitikberatkan pada aspek teknis jaringan murni, sedangkan penelitian ini mengintegrasikan hasil teknis tersebut dengan teori Alireza Noruzi terkait efisiensi waktu akses bagi pemustaka.
+
+Ketiga, Al-Fatih (2023) mengkaji strategi infrastruktur digital perpustakaan dalam menghadapi pertumbuhan data yang besar. Hasil penelitian menekankan bahwa perpustakaan memerlukan sistem yang skalabel agar bisa terus berkembang tanpa gangguan layanan. Kesamaan dengan penelitian ini adalah penggunaan perspektif perpustakaan sebagai organisme yang terus tumbuh sesuai hukum kelima Ranganathan. Namun, perbedaannya adalah penelitian Al-Fatih bersifat deskriptif-kualitatif mengenai kebijakan, sedangkan penelitian ini bersifat eksperimental melalui implementasi dan pengujian langsung di Organisasi N.
+
+Terakhir, penelitian dari Lestari (2020) meneliti tentang kepuasan pengguna terhadap kecepatan akses katalog daring (OPAC), yang menyimpulkan bahwa responsivitas sistem berkorelasi langsung dengan tingkat kepuasan pemustaka. Kesamaannya adalah fokus pada peningkatan kualitas layanan perpustakaan melalui optimasi waktu tunggu. Perbedaannya, Lestari berfokus pada analisis persepsi pengguna, sementara penelitian ini memberikan solusi infrastruktur berupa load balancing NGINX sebagai upaya teknis untuk mewujudkan kecepatan akses yang diinginkan tersebut.
+
+## Tinjauan Penelitian Terdahulu (old)
 
 Beberapa penelitian terdahulu yang relevan dengan rancangan load balancer pada sistem otomasi perpustakaan adalah sebagai berikut:
 
