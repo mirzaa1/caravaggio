@@ -58,4 +58,29 @@ Penelitian bertujuan untuk memahami bagaimana MongoDB dapat diimplementasikan un
 Analisis ditujukan untuk menilai perbedaan antara model dokument-oriented dan model relasional dalam mengelola struktur metadata perpustakaan.
 
 3. Mendeskripsikan struktur data dokumen sebagai representasi metadata katalog
-Penelitian akan mengeksplorasi cara merepresentasikan elemen penting katalog perpustakaan (judul, pengarang, subjek, ISBN) secara fleksibel dalam dokumen MongoDB.
+Penelitian akan mengeksplorasi cara merepresentasikan elemen penting katalog perpustakaan secara fleksibel dalam dokumen MongoDB.
+
+### MANFAAT PENELITIAN
+Manfaat penelitian ini untuk teoritis dan praktisi sebagai berikut:
+
+#### Manfaat Teoretis
+1. Memberikan kontribusi ilmiah dalam bidang Library and Information Science mengenai penerapan teknologi database NoSQL dalam katalog perpustakaan.
+
+2. Menjadi referensi teoritis tentang bagaimana teknologi dokument-oriented dapat mengakomodasi metadata yang kompleks.
+
+3. Menambah kajian akademik terkait adaptasi sistem informasi perpustakaan dengan perkembangan teknologi database terkini.
+
+4. Mendorong penelitian lanjutan di bidang integrasi metadata lain seperti data bibliografis global.
+
+5. Memberikan landasan bagi pengembangan teori database non-relasional dalam domain perpustakaan.
+
+#### Manfaat Praktisi
+1. Memberi panduan kepada pengembang sistem perpustakaan tentang alternatif teknologi database yang lebih adaptif.
+
+2. Membantu perpustakaan dalam memilih model database yang sesuai dengan kebutuhan metadata yang dinamis.
+
+3. Mempercepat proses pengembangan OPAC yang responsif terhadap perubahan kebutuhan pengguna.
+
+4. Mengurangi kebutuhan modifikasi skema yang kompleks pada sistem katalog konvensional.
+
+5. Memberikan praktik terbaik terhadap pemanfaatan struktur data dokumen dalam penyimpanan katalog.
