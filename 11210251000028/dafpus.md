@@ -28,4 +28,10 @@ Khariroh, U. (2021). Analisis Sistem Klasifikasi Keamanan dan Akses Arsip Dinami
 
 14. Moleong, L. J. (2017). Metodologi penelitian kualitatif (Edisi revisi). PT Remaja Rosdakarya.
 
-15. 
+15. Setyarto, Dwiatmodjo Budi. (2025). Pengelolaan Arsip Digital. YPAD Penerbit, 1(1). https://doi.org/10.61402/ypad.v1i1.244
+
+16. Farahdiba, H., Wolor, C. W., & Marsofiyati, M. (2024). Analisis Pengelolaan Arsip Digital Pada PT Anugrah Alam Karunia Abadi. Journal of administrative and social science, 5(1), 41-53.
+
+17. Mohammad Harun Alfirdaus, M., Tahir, M., Dewanti, N. E., Ardianto, R., Azurah, N. N., & Cahyono, N. F. (2023). Perancangan aplikasi enkripsi deskripsi menggunakan metode caesar cipher berbasis web. Jurnal Teknik Mesin, Industri, Elektro Dan Informatika, 2(2), 64–76. https://doi.org/10.55606/jtmei.v2i2.1628
+
+18. 
