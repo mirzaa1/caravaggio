@@ -55,6 +55,11 @@ Terlepas dari keunggulannya, implementasi LUKS menghadapi tantangan signifikan, 
 
 
 ## Network Bound Disk Encryption
+Network Bound Disk Encryption (NBDE) merupakan sebuah pengamanan data yang mengintegrasikan secara sistematis mekanisme enkripsi media penyimpanan dengan kendali akses berbasis infrastruktur jaringan. Implementasi NBDE memfasilitasi proses pembukaan kunci (unlocking) disk secara otomatis pada saat boot, sehingga mampu mengeliminasi kebutuhan akan input manual dalam memasukkan passpharase atau sandi (Red Hat Enterprise Linux, 2024).
+
+Secara operasional, implementasi NBDE umumnya mengadopsi arsitektur berbasis client-server yang mengintegrasikan Clevis sebagai modul klien dan Tang sebagai entitas peladen. Dalam ekosistem ini, Clevis berperan untuk melakukan penautan (binding) antara mekanisme enkripsi pada perangkat blok dengan peladen yang terdapat tang jaringan yang dituju. Sementara itu, Tang berfungsi sebagai penyedia layanan autentikasi yang di mana proses verifikasi dilakukan tanpa perlu menyimpan kunci enkripsi secara permanen pada sisi peladen.
+
+Ketergantungan terhadap intervensi manual melalui implementasi NBDE secara efektif mampu memitigasi risiko human error dalam manajemen kunci akses. Oleh karena itu, efektivitas sistem ini berbanding lurus dengan keandalan infrastruktur jaringan yang digunakan. Mengingat proses dekripsi memiliki ketergantungan terhadap konektivitas jaringan yang stabil, setiap gangguan pada stabilitas jaringan berpotensi menghambat proses NBDE.
 
 
 # Kerangka Pemikiran 
