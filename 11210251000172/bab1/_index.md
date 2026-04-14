@@ -42,51 +42,16 @@ Selain itu, Organisasi N saat ini sedang berada dalam fase pengembangan sistem i
 
 Sebagai langkah nyata, penelitian ini akan mengintegrasikan teori-teori Load Balancer untuk diaplikasikan pada kasus nyata yang kompleks di lingkungan Organisasi N. Keberhasilan dalam melakukan optimasi di organisasi ini diharapkan tidak hanya menyelesaikan masalah internal, tetapi juga menjadi referensi ilmiah bagi organisasi lain dengan karakteristik beban kerja yang serupa. Oleh karena itu, fokus penelitian di lokasi ini dianggap sangat relevan dan mendesak demi mendukung keberlanjutan transformasi digital di lingkungan Organisasi N.
 
-
-<!-- untuk bab 4
-
-Perkembangan teknologi informasi telah mengubah paradigma layanan perpustakaan dari fisik menjadi ekosistem digital yang dinamis. Fenomena pertumbuhan data digital dan peningkatan jumlah pengguna yang mengakses layanan secara daring merupakan perwujudan dari hukum kelima Alireza Noruzi, yaitu "The Web is a growing organism" (Noruzi, 2004). Namun, pertumbuhan ini membawa tantangan besar pada stabilitas infrastruktur server perpustakaan.
-
-Salah satu solusi teknis untuk menjaga performa sistem adalah dengan menerapkan load balancing. Secara definisi, load balancing adalah teknik untuk mendistribusikan beban lalu lintas jaringan atau permintaan aplikasi secara merata ke beberapa peladen (server) di dalam sebuah klaster (Nedelcu, 2013). Tujuan utamanya adalah untuk memastikan tidak ada satu pun peladen yang menanggung beban berlebih (overload), yang dapat menyebabkan sistem melambat atau bahkan tumbang.
-
-Penerapan load balancing menjadi sangat penting karena beberapa alasan krusial. Pertama, untuk menjamin ketersediaan layanan (high availability); jika satu server mengalami gangguan, beban akan otomatis dialihkan ke server lain sehingga layanan perpustakaan tetap berjalan. Kedua, untuk meningkatkan responsivitas sistem, yang sejalan dengan hukum keempat Noruzi, "Save the time of the Web user" (Noruzi, 2004). Tanpa pembagian beban, pemustaka akan sering menghadapi latensi tinggi saat mengakses koleksi digital atau melakukan pencarian di katalog (OPAC).
-
-Sebagai contoh, perpustakaan berskala besar seperti Library of Congress di Amerika Serikat atau National Library of Australia telah lama menerapkan arsitektur load balancing untuk menangani jutaan permintaan akses setiap harinya. Di Indonesia, perpustakaan perguruan tinggi besar seperti Perpustakaan Nasional RI (Perpusnas) atau perpustakaan universitas ternama juga mulai mengadopsi teknologi ini untuk mendukung sistem repositori institusi mereka agar tetap stabil saat musim tugas akhir atau ujian (Nedelcu, 2013).
-
-Terdapat perbedaan mendasar antara perpustakaan yang menggunakan load balancing dengan yang tidak. Perpustakaan tanpa load balancing (menggunakan single server) memiliki titik kegagalan tunggal (single point of failure); jika server tersebut mati, seluruh layanan informasi terhenti total. Sebaliknya, perpustakaan yang menerapkan load balancing memiliki infrastruktur yang jauh lebih tangguh (redundant), mampu menangani lonjakan pengunjung secara simultan tanpa penurunan performa yang berarti, dan lebih mudah untuk ditingkatkan kapasitasnya (scalability) di masa depan sesuai kebutuhan pertumbuhan data (Noruzi, 2004; Nedelcu, 2013). -->
-
-<!-- ## Latar belakang yang lama
-Perpustakaan merupakan institusi pengelola koleksi karya tulis, cetak, dan/atau rekam secara profesional dengan sistem yang baku guna memenuhi kebutuhan pendidikan, penelitian, dan informasi para pemustaka. Sebagai pusat sumber daya informasi, perpustakaan memiliki peran strategis dalam menyediakan bukti intelektual, membantu pengambilan keputusan akademis, serta menjamin akuntabilitas penyebaran ilmu pengetahuan. Pengelolaan perpustakaan kini menjadi aspek vital dalam operasional lembaga pendidikan dan organisasi, di mana perpustakaan tidak hanya berfungsi sebagai gudang buku, tetapi juga sebagai penyedia data strategis yang dinamis.
-
-Seiring pesatnya perkembangan teknologi informasi hingga tahun 2026, organisasi mulai meninggalkan pola konvensional dan mengadopsi sistem otomasi perpustakaan serta perpustakaan digital untuk meningkatkan efisiensi dan kecepatan akses data. Hal ini sejalan dengan amanat Undang-Undang Republik Indonesia Nomor 43 Tahun 2007 tentang Perpustakaan yang menekankan bahwa penyelenggaraan perpustakaan harus dilakukan sesuai dengan standar nasional untuk menjamin ketersediaan layanan yang autentik dan terpercaya. Praktik tata kelola yang baik melibatkan pengklasifikasian, penyimpanan, dan pemeliharaan koleksi secara digital untuk menjaga integritas dan kerahasiaan informasi di dalamnya.
-
-Efektivitas perpustakaan digital sangat bergantung pada proses komprehensif yang mencakup pengadaan, pengolahan, hingga pendayagunaan koleksi. Menurut Peraturan Pemerintah Nomor 24 Tahun 2014, proses pengelolaan yang sistematis memainkan peran penting dalam menjaga memori kolektif organisasi dan memfasilitasi kebutuhan administratif maupun hukum. Melalui sistem otomasi yang terstruktur, perpustakaan dapat meningkatkan efisiensi operasional secara signifikan sekaligus melindungi hak kekayaan intelektual yang dikelolanya.
-
-Sistem otomasi perpustakaan ini mengintegrasikan teknologi informasi dan komunikasi untuk mengelola koleksi dari hulu ke hilir, mulai dari digitalisasi dokumen, pengambilan informasi (information retrieval) yang cepat, hingga distribusi akses kepada pemustaka secara daring. Implementasi ini, sesuai dengan standar pengembangan perpustakaan modern, memanfaatkan perangkat lunak (Library Management System) dan perangkat keras canggih untuk memperkuat tata kelola informasi.
-
-Namun, dalam praktiknya di era digital, stabilitas infrastruktur teknologi menjadi tantangan besar. Perpustakaan digital yang melayani akses massa memerlukan dukungan server yang andal untuk menjaga ketersediaan data secara real-time. Masalah muncul ketika beban kerja server tidak terdistribusi secara merata, yang mengakibatkan terjadinya bottleneck atau kegagalan sistem saat puncak kunjungan pemustaka. Oleh karena itu, diperlukan optimalisasi distribusi beban kerja pada server menggunakan teknologi load balancing. Salah satu pendekatan yang dinilai efektif adalah algoritma Dynamic Weighted Round Robin yang mampu meningkatkan efisiensi distribusi beban kerja dengan mempertimbangkan kapasitas spesifik dari masing-masing server secara dinamis (Rahmawati & Suryanto, 2019, hlm. 167–174).
-
-Server adalah komputer atau program perangkat lunak yang menyediakan layanan kepada komputer, program, atau pengguna lain di dalam jaringan. Server merupakan tulang punggung komputasi modern, yang menjalankan berbagai hal mulai dari aplikasi web dan email hingga penyimpanan file dan manajemen basis data. 
-
-Server dirancang untuk menangani permintaan dengan volume tinggi, mempertahankan integritas data, dan memastikan akses yang andal dan aman ke sumber daya. Server dapat berupa mesin fisik yang ditempatkan di pusat data atau mesin virtual yang berjalan di infrastruktur cloud. 
-
-Kinerja server sangat bergantung pada konfigurasi dan spesialisasi yang diterapkan. (He et al., 2021, hlm 1868-1895). Penelitian menunjukkan bahwa pengoptimalan konfigurasi server dapat meningkatkan kinerja secara signifikan, terutama dalam lingkungan komputasi tepi (edge computing) di mana permintaan komputasi bervariasi (Steen & Tanenbaum, 2016, hlm 967-1009).
-
-Dalam konteks sistem otomasi perpustakaan, load balancer berperan penting untuk mendistribusikan beban kerja secara merata di antara server-server yang ada. Hal ini diperlukan untuk meningkatkan kinerja, ketersediaan, dan skalabilitas sistem. Load balancer berfungsi sebagai perantara antara klien dan server, mengatur lalu lintas data masuk sehingga tidak ada server yang terlalu dibebani (Buyya et al., 2009, hlm 599-616).
-
-Skalabilitas server juga merupakan aspek penting yang harus dipertimbangkan. Dengan meningkatnya jumlah pengguna dan beban kerja, server harus mampu menyesuaikan kapasitasnya untuk memenuhi permintaan yang meningkat. (Saifullah & Mohammed, 2014, hlm 1-5).
-
-Pendekatan seperti load balancing dan virtualisasi dapat digunakan untuk mencapai tujuan ini, memungkinkan distribusi beban kerja yang lebih efisien di antara beberapa server (Vennila & Manikandan, 2014, hlm 1-6).
-
-Dengan semakin meningkatnya volume data dan permintaan pada sistem otomasi perpustakaan, dibutuhkan arsitektur yang scalable dan handal. Pendekatan agile dalam pengembangan sistem dapat membantu mengakomodasi perubahan dan kebutuhan yang dinamis. Oleh karena itu, rancangan load balancer yang efektif dan efisien menjadi penting untuk memastikan keandalan dan ketersediaan sistem otomasi perpustakaan dalam menghadapi lonjakan permintaan. -->
-
 ## Identifikasi Masalah
 
 Peneliti melihat tidak adanya sistem otomasi perpustakaan yang stabil dalam menghadapi lonjakan permintaan buku digital yang tinggi di Organisasi N adalah masalah utama penelitian ini, seperti yang ditunjukkan dalam latar belakang.
 
-1. Belum adanya redundansi peladen (server cadangan) yang menyebabkan seluruh layanan perpustakaan digital di Organisasi N akan berhenti total jika peladen utama mengalami gangguan teknis atau kerusakan (hardware).
-2. Terjadinya kelambatan waktu pemuatan (loading) katalog dan pengunduhan buku digital saat jam sibuk, yang menghambat efisiensi waktu pemustaka sesuai dengan prinsip hukum keempat Noruzi (Save the time of the Web user).
-3. Penumpukan antrean permintaan (request) hanya pada satu titik akses, sehingga sumber daya infrastruktur TI yang ada di Organisasi N tidak terpakai secara optimal dan merata.
+1. Distribusi Trafik yang Tidak Merata: Terjadinya penumpukan beban kerja hanya pada server tertentu, sementara sumber daya pada server lain tidak termanfaatkan secara optimal.
+2. Penurunan Performa Sistem: Munculnya kendala berupa respon aplikasi yang lambat atau latensi tinggi, terutama pada saat terjadi lonjakan jumlah pengguna secara bersamaan.
+3. Rendahnya Ketersediaan Layanan (Availability): Risiko terjadinya layanan yang tidak dapat diakses (downtime) apabila salah satu server mengalami gangguan, karena belum adanya mekanisme pengalihan beban otomatis yang andal.
+4. Manajemen Sumber Daya yang Tidak Efisien: Penggunaan infrastruktur teknologi informasi yang belum mampu beradaptasi secara dinamis terhadap fluktuasi trafik harian.
+5. Kurangnya Optimalisasi Strategi Penyeimbangan Beban: Belum digunakannya algoritma distribusi beban yang tepat untuk menangani karakteristik trafik spesifik yang ada pada organisasi.
+6. Gangguan Operasional Organisasi: Terhambatnya aktivitas kerja staf dan pelayanan kepada pihak eksternal akibat ketidakstabilan sistem pada jam-jam sibuk.
 
 ## Batasan Masalah
 
