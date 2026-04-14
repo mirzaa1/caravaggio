@@ -45,20 +45,21 @@ Pengumpulan data dengan teknik wawancara juga meningkatkan kredibilitas dan vali
 
 
 # Teknik Analisis Data 
-Setelah data dikumpulkan dengan penggunaan perangkat lunak dan observasi, kemudian dianalisis dengan tujuan untuk menghasilkan data valid yang akan ditampilkan dalam hasil penelitian. Proses analisis yang digunakan sebagai berikut:
+Setelah data dikumpulkan dengan teknik uji coba, penggunaan laboratorium, dan wawancara. Kemudian dianalisis dengan tujuan untuk menghasilkan data valid yang akan ditampilkan dalam hasil penelitian. Proses analisis yang digunakan sebagai berikut:
 
 ## Observasi Data Eksperimen
 Observasi data eksperimen dilakukan dengan cara mengamati secara langsung hasil dari implementasi sistem NBDE yang telah dikembangkan. Observasi ini bertujuan untuk mengetahui bagaimana sistem bekerja dalam kondisi nyata, baik saat sistem terhubung dengan jaringan maupun saat tidak terhubung. Dengan demikian, peneliti dapat memperoleh data yang objektif mengenai performa dan keamanan sistem.
+
 Dalam proses observasi, peneliti fokus pada beberapa aspek penting, seperti keberhasilan proses autentikasi jaringan, kemampuan sistem dalam membuka enkripsi secara otomatis, serta tingkat keamanan data terhadap akses yang tidak sah. Observasi dilakukan tanpa intervensi langsung terhadap sistem, sehingga data yang diperoleh mencerminkan kondisi sebenarnya.
-Hasil observasi kemudian digunakan sebagai dasar untuk menilai apakah implementasi NBDE telah memenuhi tujuan penelitian. Dengan pendekatan ini, peneliti dapat mengidentifikasi kelebihan dan kekurangan sistem secara lebih akurat, sehingga hasil analisis menjadi lebih valid dan dapat dipertanggungjawabkan (Moleong, 2017).
+
+Hasil observasi kemudian digunakan sebagai dasar untuk menilai apakah implementasi NBDE telah memenuhi tujuan penelitian. Dengan pendekatan ini, peneliti dapat mengidentifikasi kelebihan dan kekurangan sistem secara lebih akurat, sehingga hasil analisis menjadi lebih valid dan dapat dipertanggungjawabkan (Moleong, 2016).
+
 ## Seleksi Data Eksperimen 
 Seleksi data eksperimen merupakan tahap penyaringan data yang telah diperoleh dari hasil observasi dan dokumentasi eksperimen. Pada tahap ini, peneliti memilih data yang relevan dengan tujuan penelitian serta memiliki tingkat keakuratan yang tinggi. Proses seleksi ini penting untuk memastikan bahwa data yang digunakan dalam analisis benar-benar mencerminkan kondisi sistem yang sebenarnya.
+
 Dalam penelitian ini, data yang diseleksi meliputi hasil pengujian sistem, tangkapan layar proses implementasi, serta catatan eksperimen yang berkaitan langsung dengan penerapan NBDE. Data yang tidak relevan atau memiliki inkonsistensi akan dieliminasi agar tidak mempengaruhi hasil analisis. Proses ini membantu meningkatkan kualitas data yang digunakan dalam penelitian.
 Selain itu, seleksi data juga bertujuan untuk menyederhanakan data yang kompleks sehingga lebih mudah dianalisis. Dengan data yang telah disaring, peneliti dapat fokus pada informasi yang paling penting dan signifikan, sehingga hasil analisis menjadi lebih terarah dan mendalam.
-## Implementasi Data Eksperimen
-Implementasi data eksperimen merupakan tahap di mana data yang telah diseleksi digunakan untuk melakukan analisis lebih lanjut terhadap sistem yang dikembangkan. Pada tahap ini, peneliti mengaplikasikan data hasil eksperimen untuk menguji kembali model NBDE serta mengevaluasi efektivitasnya dalam meningkatkan keamanan arsip digital.
-Proses implementasi ini melibatkan perbandingan antara kondisi sebelum dan sesudah penerapan NBDE. Dengan melakukan perbandingan tersebut, peneliti dapat mengidentifikasi peningkatan yang terjadi, baik dari segi keamanan maupun performa sistem. Analisis ini dilakukan secara deskriptif untuk memberikan gambaran yang jelas mengenai dampak implementasi sistem (Creswell, 2014).
-Hasil dari tahap ini menjadi dasar dalam penarikan kesimpulan penelitian. Dengan menggunakan data yang telah dianalisis secara sistematis, peneliti dapat memberikan rekomendasi yang relevan terkait penggunaan NBDE dalam pengamanan arsip digital (Pressman & Maxim, 2015).
+
 
 # Tempat dan Jadwal Penelitian
 ## Tempat Penelitian
