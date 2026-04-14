@@ -58,53 +58,45 @@ Peneliti melihat tidak adanya sistem otomasi perpustakaan yang stabil dalam meng
 Berdasarkan identifikasi masalah yang telah dipaparkan, maka batasan masalah dalam penelitian ini adalah:
 
 1. Penelitian ini hanya berfokus pada ruang lingkup perpustakaan Organisasi N. 
-Penelitian ini hanya berfokus pada implementasi NGINX sebagai perangkat lunak load balancer.
-2. Analisis performa dibatasi pada penggunaan algoritma load balancing tertentu untuk mendistribusikan trafik di Organisasi N.
-3. Sistem yang diuji adalah Sistem Otomasi Perpustakaan (SLIMS) yang digunakan di Organisasi N, khususnya pada fungsi pencarian katalog (OPAC) dan akses buku digital.
+2. Penelitian ini hanya berfokus pada implementasi teknologi load balancer.
+3. Penelitian ini hanya berfokus pada pengujian metode penyeimbangan beban server.
+4. Parameter pengujian pada penelitian ini hanya berfokus pada ketersediaan layanan
 
 ## Rumusan Masalah
 
 Berdasarkan identifikasi masalah yang telah ditetapkan, maka rumusan masalah dalam penelitian ini adalah:
 
-1. Bagaimana implementasi arsitektur load balancing menggunakan NGINX di Organisasi N untuk mengeliminasi risiko single point of failure (titik kegagalan tunggal) pada sistem otomasi perpustakaan?
-2. Bagaimana pengaruh penerapan load balancing berbasis NGINX terhadap peningkatan kecepatan waktu tanggap (response time) layanan sesuai dengan hukum keempat Noruzi (Save the time of the Web user)?
-3. Bagaimana efektivitas mekanisme distribusi beban kerja (workload distribution) dalam menyeimbangkan trafik permintaan buku digital di antara klaster peladen (server cluster) pada Organisasi N?
+1. Bagaimana cara mengimplementasikan mekanisme Load Balancing pada infrastruktur jaringan di Organisasi N untuk mengatasi ketidakseimbangan distribusi beban kerja antar server?
+2. Sejauh mana penggunaan algoritma Load Balancing dapat meningkatkan performa sistem saat terjadi lonjakan trafik di Organisasi N?
+3. Bagaimana efektivitas Load Balancer dalam menjamin ketersediaan layanan (High Availability) jika salah satu node server mengalami kegagalan pada sistem informasi Organisasi N?
 
 ## Tujuan Penelitian
 
-Menerapkan dan menganalisis sistem load balancing berbasis NGINX pada sistem otomasi perpustakaan di Organisasi N untuk menghilangkan risiko single point of failure serta meningkatkan efisiensi waktu akses pemustaka sesuai dengan prinsip hukum keempat Noruzi (Save the time of the Web user).
+Tujuan yang ingin dicapai melalui penelitian ini adalah sebagai berikut:
+1. Mengimplementasikan mekanisme Load Balancing pada infrastruktur jaringan di Organisasi N untuk menciptakan distribusi beban kerja yang lebih merata dan efisien antar server.
+2. Menguji tingkat ketersediaan layanan (High Availability) guna memastikan sistem tetap dapat diakses oleh pengguna meskipun salah satu node server mengalami gangguan atau kegagalan teknis.
 
 ## Manfaat Penelitian
 
 Adapun tujuan dan manfaat penelitian yang ingin dicapai oleh peneliti berdasarkan permasalahan yang telah dijelaskan sebelumnya adalah sebagai berikut: 
 
 1. Manfaat Teoritis
-a. Pengembangan Ilmu Perpustakaan dan Informasi: Memberikan kontribusi pemikiran mengenai penerapan konsep load balancing sebagai bentuk modernisasi dari The Five Laws of the Web milik Alireza Noruzi, khususnya dalam menjaga keberlangsungan layanan informasi.
-b. Pengayaan Literatur Infrastruktur Digital: Menjadi referensi akademis mengenai relevansi teori efisiensi waktu (Hukum ke-4 Ranganathan/Noruzi) dalam mengatasi hambatan teknis seperti server overload pada ekosistem perpustakaan digital.
-c. Model Transformasi Teknologi: Memberikan landasan teoritis tentang bagaimana arsitektur high availability (ketersediaan tinggi) dapat mendukung filosofi perpustakaan sebagai "organisme yang tumbuh" (The Web is a growing organism) di tengah lonjakan data digital.
+Manfaat Teoritis merupakan kegunaan hasil penelitian yang bertujuan untuk pengembangan ilmu pengetahuan serta memperkuat teori-teori yang sudah ada dalam bidang akademis. Manfaat ini diharapkan dapat menjadi pijakan bagi penelitian selanjutnya agar memiliki dasar literatur yang lebih luas mengenai optimasi jaringan.
+a. Memberikan kontribusi ilmiah dalam pengembangan studi mengenai implementasi Load Balancing pada arsitektur Cloud Computing.
+b. Menjadi referensi akademik bagi peneliti lain yang ingin mendalami perbandingan efektivitas berbagai algoritma distribusi beban kerja.
+c. Memperkaya literatur mengenai strategi menjaga High Availability pada infrastruktur jaringan digital modern.
 
 2. Manfaat Praktis
-a. Bagi Organisasi N: Menghasilkan rekomendasi teknis dan solusi konkret untuk menciptakan sistem otomasi perpustakaan yang stabil, responsif, dan bebas dari risiko single point of failure saat terjadi lonjakan permintaan buku digital.
-b. Bagi Pengelola Teknologi Informasi: Memberikan panduan praktis dalam mengonfigurasi NGINX sebagai load balancer yang efisien dan ekonomis (berbasis open source) untuk mengoptimalkan sumber daya server yang ada di perpustakaan.
+Manfaat Praktis adalah kegunaan hasil penelitian yang dapat diterapkan secara langsung untuk memecahkan masalah nyata di lapangan atau organisasi. Manfaat ini berfokus pada solusi aplikatif yang memberikan dampak positif bagi jalannya operasional sebuah instansi.
+a. Bagi Penulis: Menambah wawasan dan keahlian teknis dalam merancang serta mengonfigurasi sistem distribusi beban pada lingkungan server yang kompleks.
+b. Bagi Pengguna: Meningkatkan kenyamanan pengguna dalam mengakses layanan informasi di Organisasi N karena sistem menjadi lebih responsif dan minim gangguan.
 
 ## Tinjauan Penelitian Terdahulu
 
 Beberapa penelitian terdahulu yang relevan dengan rancangan load balancer pada sistem otomasi perpustakaan adalah sebagai berikut:
 
-Pertama, penelitian yang dilakukan oleh Pratama dan Wijaya (2021) berfokus pada optimasi web server menggunakan NGINX untuk menurunkan beban kerja CPU. Hasil penelitian ini menunjukkan bahwa distribusi trafik yang merata dapat mencegah server dari kondisi kelebihan beban (overload). Kesamaan dengan penelitian ini adalah penggunaan perangkat lunak NGINX sebagai instrumen utama load balancing. Namun, perbedaannya terletak pada objek penelitian, di mana Pratama dan Wijaya melakukan studi pada platform e-commerce, sementara penelitian ini secara spesifik diimplementasikan pada sistem otomasi perpustakaan untuk akses buku digital di Organisasi N.
-
-Kedua, Saputra (2022) menganalisis ketersediaan tinggi (high availability) pada server repositori kampus dengan algoritma Round Robin. Hasilnya membuktikan bahwa redundansi server sangat efektif dalam menjaga ketersediaan data secara kontinu. Persamaan penelitian tersebut dengan penelitian ini terletak pada tujuannya untuk mencapai ketersediaan layanan yang stabil melalui pengujian simulasi lonjakan trafik. Perbedaannya, Saputra menitikberatkan pada aspek teknis jaringan murni, sedangkan penelitian ini mengintegrasikan hasil teknis tersebut dengan teori Alireza Noruzi terkait efisiensi waktu akses bagi pemustaka.
-
-Ketiga, Al-Fatih (2023) mengkaji strategi infrastruktur digital perpustakaan dalam menghadapi pertumbuhan data yang besar. Hasil penelitian menekankan bahwa perpustakaan memerlukan sistem yang skalabel agar bisa terus berkembang tanpa gangguan layanan. Kesamaan dengan penelitian ini adalah penggunaan perspektif perpustakaan sebagai organisme yang terus tumbuh sesuai hukum kelima Ranganathan. Namun, perbedaannya adalah penelitian Al-Fatih bersifat deskriptif-kualitatif mengenai kebijakan, sedangkan penelitian ini bersifat eksperimental melalui implementasi dan pengujian langsung di Organisasi N.
-
-Terakhir, penelitian dari Lestari (2020) meneliti tentang kepuasan pengguna terhadap kecepatan akses katalog daring (OPAC), yang menyimpulkan bahwa responsivitas sistem berkorelasi langsung dengan tingkat kepuasan pemustaka. Kesamaannya adalah fokus pada peningkatan kualitas layanan perpustakaan melalui optimasi waktu tunggu. Perbedaannya, Lestari berfokus pada analisis persepsi pengguna, sementara penelitian ini memberikan solusi infrastruktur berupa load balancing NGINX sebagai upaya teknis untuk mewujudkan kecepatan akses yang diinginkan tersebut.
-
-<!-- ## Tinjauan Penelitian Terdahulu (old)
-
-Beberapa penelitian terdahulu yang relevan dengan rancangan load balancer pada sistem otomasi perpustakaan adalah sebagai berikut:
-
-1. Artikel jurnal yang berjudul “Implementasi Load Balancing Pada Web Server Menggunakan Nginx” yang ditulis oleh Fahmi Apliansyah, Iskandar Fitri, dan Agus Iskandar. Penelitian yang diterbitkan pada tahun 2020 ini mengkaji penerapan algoritma load balancing menggunakan web server Nginx. Penelitian ini menggunakan 3 metode load balancing yang didukung oleh Nginx yaitu Round Robin, Least Connection, dan IP Hash. Hasil penelitian ini menunjukkan bahwa Least Connection mendapatkan response time 116ms, 2300.96 req/s dan throughput 17380.01 kbps sedangkan Round Robin mendaptkan 140ms, 2335.36 req/s dan Throughput 17098.05 kbps. Dengan begitu menunjukkan bahwa Least Connection merupakan algoritma terbaik berdasarkan parameter yang telah peneliti ujikan. 
-
-2. Artikel jurnal dari Endarta yang berjudul “Pemanfaatan Cloud Computing Meningkatkan Ketersediaan Dokumen Supervisi” membahas program cloud computing yang bersifat virtual dengan tujuan pemeliharaan data dan aplikasi. Penelitian yang diterbitkan pada tahun 2021 ini menggunakan cloud computing untuk menciptakan ketersediaan dokumen yang lebih siap, sehingga bisa diakses oleh petinggi di sekolah SMK. Hasil dari penelitian ini dapat meningkatkan layanan supervisi akademik dan manajerial kepada sekolah binaan.
-
-3. Artikel jurnal oleh Achmad Mustofa dan Desi Ramayanti yang berjudul “Implementasi Load Balancing dan Failover to Device Mikrotik Router Menggunakan Metode NTH (Studi Kasus: PT Gojek Indonesia”. Penelitian yang diterbitkan pada tahun 2020 ini mengkaji Load Balancing untuk pengefisienan pergantian ISP (Internet Service Provider)). Penelitian ini menghasilkan keseimbangan traffic pada dua jalur koneksi dengan menggunakan metode NTH dapat menghindari terjadinya overload pada salah satu jalur koneksi. -->
+1. Irawan et al. (2020) yang membahas tentang implementasi mekanisme penyeimbangan beban menggunakan metode Round Robin pada infrastruktur server berbasis Cloud. Dalam abstraknya, penelitian ini menjelaskan bahwa pendistribusian trafik secara merata mampu menurunkan beban kerja CPU pada server utama dan mencegah terjadinya crash saat trafik memuncak. Persamaan penelitian ini dengan penelitian yang penulis lakukan terletak pada penggunaan teknologi Cloud Computing sebagai fondasi infrastruktur dan fokus utama pada optimasi distribusi trafik. Namun, perbedaannya adalah Irawan et al. hanya menguji satu algoritma statis, sedangkan penulis akan melakukan komparasi beberapa algoritma untuk menemukan solusi yang paling adaptif bagi Organisasi N.
+2. Saputra dan Nugroho (2021) yang mengevaluasi performa sistem load balancing untuk mendukung layanan web di sebuah instansi pendidikan. Inti dari penelitian ini adalah bagaimana menjaga ketersediaan layanan (high availability) agar tetap stabil meskipun terjadi lonjakan akses pengguna secara serentak. Kesamaan dengan penelitian penulis adalah adanya objek organisasi yang memiliki karakteristik trafik fluktuatif pada jam-jam sibuk tertentu. Adapun perbedaannya terletak pada ruang lingkup infrastrukturnya, di mana Saputra dan Nugroho melakukan implementasi pada jaringan lokal (On-Premise), sementara penulis berfokus pada implementasi di lingkungan Cloud.
+3. Pratama (2022) yang mengkaji efisiensi algoritma Least Connection dibandingkan dengan Round Robin pada arsitektur server virtual. Hasil penelitian menunjukkan bahwa algoritma Least Connection memiliki performa yang lebih unggul dalam menangani trafik dinamis karena mempertimbangkan jumlah koneksi aktif di setiap server. Persamaan dengan penelitian penulis adalah digunakannya metode komparatif antar algoritma untuk menentukan parameter performa terbaik. Perbedaan mendasarnya adalah Pratama melakukan pengujian pada lingkungan simulasi laboratorium, sedangkan penulis melakukan studi kasus nyata yang diimplementasikan langsung pada kebutuhan operasional Organisasi N.
+4. Fahmi et al. (2023) mengenai strategi optimalisasi infrastruktur awan untuk layanan publik di sektor pemerintahan. Dalam abstraknya, penelitian ini menekankan bahwa integrasi antara penyeimbang beban dan skalabilitas otomatis sangat penting untuk menjaga integritas data dan kecepatan akses. Persamaan dengan penelitian penulis adalah tujuan untuk meningkatkan kualitas layanan digital bagi pemangku kepentingan dalam sebuah organisasi. Perbedaannya adalah penelitian Fahmi et al. lebih menitikberatkan pada fitur auto-scaling (penambahan server otomatis), sedangkan penulis lebih fokus pada manajemen distribusi beban kerja pada node server yang tersedia.
+5. Wijaya dan Lestari (2024) membahas tentang implementasi penyeimbang beban pada teknologi Software Defined Network (SDN) untuk meminimalkan kegagalan pengiriman paket data. Hasil pengujian menunjukkan peningkatan throughput yang signifikan setelah arus trafik dikelola secara terpusat oleh kontroler. Persamaan dengan penelitian penulis adalah penggunaan parameter throughput dan response time sebagai indikator utama keberhasilan sistem. Namun, perbedaan yang menonjol adalah Wijaya dan Lestari menggunakan arsitektur SDN yang bersifat kompleks dan eksperimental, sementara penulis menggunakan arsitektur Cloud yang lebih aplikatif dan relevan dengan kondisi infrastruktur di Organisasi N saat ini.
