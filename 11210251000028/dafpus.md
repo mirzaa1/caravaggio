@@ -40,4 +40,5 @@ Khariroh, U. (2021). Analisis Sistem Klasifikasi Keamanan dan Akses Arsip Dinami
 
 20. Onishchenko, B., Banakh, R., & Ibrahim, A. A. (2024). Encrypting The File System On A Single-Board Computers Platform And Using Linux Unified Key Setup With Physical Access Keys. ADVANCES IN CYBER-PHYSICAL SYSTEMS Учредители: Lviv Polytechnic National University, 9(2), 128-133. https://doi.org/10.23939/acps2024.02.128
 
-21. 
+21. Moleong, L. J. (2016). Metodologi Penelitian Kualitatif. PT Remaja
+Rosdakarya.

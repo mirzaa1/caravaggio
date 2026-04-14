@@ -20,7 +20,7 @@ Data uji coba merupakan data yang diperoleh dengan secara langsung menggunakan s
 
 Fase ini mencakup observasi mendalam terhadap performa produk atau alat, identifikasi hambatan teknis yang timbul, serta solusi terhadap hambatan yang terjadi saat pengujian. Dengan demikian, data tersebut tidak hanya merepresentasikan hasil akhir, namun juga memberikan penjelasan mengenai dinamika proses dan anomali sistemik yang terjadi selama pengujian berlangsung. 
 
-## Laboratorium
+## Penggunaan Laboratorium
 Pengumpulan data menggunakan laboratorium digunakan pada peneliti jika membutuhkan teknologi yang canggih. Dalam praktiknya, pemilihan dan standarisasi laboratorium bersifat variatif, di mana ketersediaan pendanaan merupakan variabel penentu dalam penyediaan infrastruktur penelitian yang memadai guna menunjang akurasi hasil pengembangan (Richey & Klein, 2007) .
 
 Spesifikasi infrastruktur laboratorium yang digunakan dalam penelitian ini diuraikan secara lengkap. Penjabaran ini mencakup seluruh perangkat keras dan perangkat lunak yang membentuk lingkungan laboratorium. Berikut spesifikasi laboratorium pada penelitian ini :
@@ -37,7 +37,11 @@ Spesifikasi infrastruktur laboratorium yang digunakan dalam penelitian ini diura
 | 1 router wireless  |                          |
 
 ## Wawancara
+Wawancara didefinisikan sebagai sebuah metode interaksi verbal yang diselenggarakan secara terstruktur dengan tujuan spesifik untuk perolehan data penelitian. Proses ini melibatkan sinergi antara dua pihak utama, yakni pewawancara (interviewer) yang berperan sebagai penanya sekaligus pengarah pembicaraan, dan narasumber (informant) yang bertindak sebagai penyedia informasi atau jawaban atas serangkaian stimulus pertanyaan yang diajukan (Moleong, 2016).
 
+Tahapan wawancara dikembangkan lebih lanjut dengan analisis penilaian kebutuhan (needs assessment). Fokus utama dalam fase ini adalah untuk mengeksplorasi kemampuan dasar yang harus dimiliki oleh seorang perancang guna mencapai efektivitas dan keberhasilan dalam penilaian kebutuhan (Richey & Klein, 2007).
+
+Pengumpulan data dengan teknik wawancara juga meningkatkan kredibilitas dan validitas temuan peneliti terhadap informasi yang dikumpulkan. Melalui interaksi secara langsung ini, peneliti memperoleh kapabilitas untuk mendalami perspektif partisipanvsecara lebih lengkap, baik dalam konteks situasi tertentu maupun fenomena spesifik yang sedang dikaji.
 
 
 # Teknik Analisis Data 
