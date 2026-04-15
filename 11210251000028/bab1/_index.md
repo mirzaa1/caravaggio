@@ -16,7 +16,7 @@ Keamanan arsip digital merupakan isu strategis dalam tata kelola arsip di era di
 
 Dalam konteks penyimpanan digital, keamanan arsip digital bergantung pada mekanisme proteksi data di tingkat perangkat keras dan perangkat lunak. Salah satu pendekatan umum adalah dengan menerapkan sistem enkripsi pada media penyimpanan agar data tidak dapat diakses tanpa izin atau wewenang.
 
-Ancaman terhadap arsip digital sering memanfaatkan celah keamanan pada perangkat lunak atau kesalahan konfigurasi pengguna. Dalam konteks perusahaan, dampak serangan tersebut dapat menyebabkan kerugian finansial, reputasi, bahkan gangguan operasional (Raj, 2023). Terdapat kasus kebocoran data terhadap arsip digital seperti serangan operasi dragon knight pada tahun 2006 yang merugikan perusahaan - perusahaan minyak dan gas. Serangan ini bertujuan untuk mengambil informasi terkait data lapangan, data keuangan, dan dokumen perintah rahasia untuk kepentingan perusahaan.
+Ancaman terhadap arsip digital sering memanfaatkan celah keamanan pada perangkat lunak atau kesalahan konfigurasi pengguna. Dalam konteks perusahaan, dampak serangan tersebut dapat menyebabkan kerugian finansial, reputasi, bahkan gangguan operasional (Raj, 2023). Terdapat kasus kebocoran data terhadap arsip digital pada perangkat penyimpanan seperti melakukan perbaikan pada perangkat penyimpanan di tempat service yang menyebabkan data dapat dicopy atau diakses oleh pihak teknisi. Serangan ini bertujuan untuk mengambil informasi terkait data lapangan, data keuangan, dan dokumen perintah rahasia untuk kepentingan perusahaan.
 
 Implementasi teknologi enkripsi telah menjadi praktik standar dalam keamanan penyimpanan digital modern. Namun, satu sisi metode enkripsi masih terdapat kelemahan dalam kecepatan proses data yang cukup besar (Judijanto et al., 2025).  Oleh karena itu, pemilihan metode enkripsi yang tepat menjadi hal fundamental bagi keamanan arsip digital.
 
@@ -25,7 +25,7 @@ Dalam konteks PT X, arsip digital menjadi aset informasi penting yang harus dija
 Pengembangan model dan implementasi NBDE untuk perusahaan seperti PT X harus mempertimbangkan struktur jaringan internal dan pola akses data pengguna.Desain sistem harus mampu menjamin keamanan tanpa menurunkan kinerja akses arsip digital. Selain itu, integrasi dengan sistem autentikasi perusahaan harus dilakukan secara tertutup agar tidak mengganggu operasional.
 Namun, penerapan NBDE juga memiliki tantangan tertentu, khususnya dalam hal desain server otentikasi dan pemulihan sistem. Apabila Tang Server mengalami kegagalan, maka seluruh sistem terenkripsi tidak dapat diakses hingga server dipulihkan. Oleh karena itu, diperlukan rancangan yang mempertimbangkan redundansi server dan kebijakan failover. Strategi ini akan menjamin ketersediaan sistem meskipun terjadi gangguan. 
 
-PT X sebagai subjek penelitian memiliki kebutuhan khusus yang menjadikan NBDE relevan untuk diterapkan. Infrastruktur digital perusahaan melibatkan sistem penyimpanan terpusat untuk arsip media, yang diakses oleh banyak unit kerja melalui jaringan internal. Hal ini menimbulkan tantangan dalam menjaga kontrol akses dan otorisasi pengguna. Dengan NBDE, sistem penyimpanan dapat dibatasi hanya untuk perangkat yang berada dalam jaringan resmi perusahaan. Oleh karena itu, model yang diusulkan diharapkan dapat meningkatkan keamanan arsip digital perusahaan secara signifikan.
+PT X sebagai subjek penelitian sudah menerapkan Network Bound Disk Encryption pada sistem arsip digital. Infrastruktur digital perusahaan melibatkan sistem penyimpanan terpusat untuk arsip digital, yang diakses oleh banyak unit kerja melalui jaringan internal. Hal ini menimbulkan tantangan dalam menjaga kontrol akses dan otorisasi pengguna. Dengan NBDE, sistem penyimpanan dapat dibatasi hanya untuk perangkat yang berada dalam jaringan resmi perusahaan. Oleh karena itu, model yang diusulkan diharapkan dapat meningkatkan keamanan arsip digital perusahaan secara signifikan.
 
 Selain itu, ketertarikan peneliti dalam mengangkat tema ini didasarkan pada pentingnya pengembangan sistem keamanan arsip digital yang tidak hanya kuat secara teknis, tetapi juga adaptif terhadap kebutuhan operasional modern. Perkembangan ancaman siber yang semakin kompleks menuntut adanya solusi keamanan yang tidak hanya mengandalkan enkripsi konvensional, tetapi juga mampu mengintegrasikan kontrol akses berbasis jaringan. Dalam hal ini, Network Bound Disk Encryption (NBDE) menjadi pendekatan yang menarik karena mampu memberikan lapisan keamanan tambahan melalui mekanisme autentikasi jaringan, sehingga relevan untuk diteliti dan dikembangkan lebih lanjut.
 
@@ -39,6 +39,8 @@ Berdasarkan uraian pada latar belakang yang sudah dijelaskan bahwa terdapat bebe
 2. Besarnya probabilitas ancaman terhadap keamanan informasi menyebabkan arsip digital berada dalam kondisi yang sangat rentan.
 3. Masih rendahnya tingkat perlindungan arsip digital dari risiko kebocoran dan penyalahgunaan data.
 4. Meningkatnya penciptaan dan penggunaan arsip digital tanpa diimbangi dengan sistem pengamanan yang memadai. 
+5. Belum diterapkannya sistem verifikasi dan validasi yang kokoh menyebabkan integritas arsip digital saat ini masih belum terjamin sepenuhnya. 
+6. Arsip digital masih rentan terhadap bahaya dari dalam karena belum adanya sistem perlindungan internal yang memadai.
 ## Batasan masalah
 
 untuk memperjelas ruang lingkup penelitian agar lebih terarah dan tidak melebar sehingga fokus pada tujuan utama yang ingin dicapai. Dengan adanya batasan masalah, penelitian dapat dilakukan secara lebih sistematis, mendalam, dan sesuai dengan kebutuhan perusahaan.
@@ -59,21 +61,21 @@ Adapun tujuan dan manfaat penelitian yang ingin dicapai oleh peneliti berdasarka
 
 ### Tujuan Penelitian
 1. Mengetahui model enkripsi perangkat penyimpanan dengan menggunakan Network Bound Disk Encryption untuk meningkatkan keamanan arsip digital.
-2. Mengkaji upaya perlindungan yang dapat dilakukan untuk keamanan arsip digital.
-3. Mengidentifikasi risiko dan kerentanan yang mempengaruhi keamanan arsip digital.
+2. Mengkaji mekanisme perlindungan yang dapat dilakukan untuk keamanan arsip digital.
+3. Mengetahui mitigasi risiko dan kerentanan yang mempengaruhi keamanan arsip digital.
 
 ### Manfaat Penelitian
 
 #### Manfaat teoritis 
  
-1. Penelitian ini diharapkan dapat memberikan kontribusi dalam pengembangan konsep keamanan arsip digital.
+1. Penelitian ini diharapkan dapat memberikan kontribusi dalam pengembangan konsep sistem keamanan arsip digital.
 2. Penelitian ini diharapkan dapat memperkaya kajian ilmiah mengenai integrasi metode enkripsi dan dekripsi otomatis dalam menjaga keamanan arsip digital pada perangkat penyimpanan. 
-3. Penelitian ini diharapkan dapat memberi wawasan pengetahuan mengenai model pengamanan pada perangkat keras yang digunakan untuk menyimpan data digital dan dapat dijadikan sumber rujukan untuk penelitian selanjutnya.                                     
+3. Penelitian ini diharapkan dapat memberi wawasan pengetahuan mengenai model mitigasi keamanan pada media penyimpanan arsip digital                                     
 
 
 #### Manfaat Praktis
-1. Dapat menambah pengalaman langsung serta wawasan terkait perancangan model dan implementasi enkripsi perangkat penyimpanan dengan menggunakan Networks Bound Disk Encryption. 
-2. Penelitian ini diharapkan dapat memberikan gambaran mengenai upaya perlindungan arsip digital dari ancaman seperti kebocoran, kehilangan, dan penyalahgunaan data.
+1. Dapat menambah pengalaman langsung serta wawasan terkait pengembangan konsep sistem keamanan arsip digital. 
+2. Penelitian ini diharapkan dapat memberikan gambaran mengenai mekanisme perlindungan arsip digital dari ancaman seperti kebocoran, kehilangan, dan penyalahgunaan data.
 3. Dapat memberikan solusi terhadap permasalahan dekripsi luks tanpa penginputan manual dari pengguna.
 
 
