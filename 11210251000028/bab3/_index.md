@@ -1,19 +1,28 @@
-# Jenis Penelitian
-Jenis penelitian yang digunakan dalam penelitian ini adalah design and development dengan pendekatan kualitatif. Penelitian desain dan pengembangan merupakan kajian yang menyeluruh tentang proses desain, pengembangan, dan evaluasi dengan tujuan menciptakan dasar empiris untuk pembuatan produk, alat instruksional atau non-instruksional, serta model baru atau model yang sudah ada lalu diperbarui dalam pengembangannya (Richey & Klein, 2007). 
+# Metode Penelitian
+Metode penelitian yang digunakan dalam penelitian ini adalah design and development dengan pendekatan kualitatif. Penelitian desain dan pengembangan merupakan kajian yang menyeluruh tentang proses desain, pengembangan, dan evaluasi dengan tujuan menciptakan dasar empiris untuk pembuatan produk, alat instruksional atau non-instruksional, serta model baru atau model yang sudah ada lalu diperbarui dalam pengembangannya (Richey & Klein, 2007). 
 
-Jenis penelitian ini mengambil pendekatan yang saling berhubungan dalam fase desain serta pengembangan produk atau alat. Seluruh rangkaian proses pengembangan didokumentasikan secara sistematis guna menjamin transparansi dan validitas rancangan. Namun, saat ini banyak peneliti menggunakan pendekatan pengembangan produk atau alat untuk pengembangan berbasis teknologi
+Metode penelitian ini mengambil pendekatan yang saling berhubungan dalam fase desain serta pengembangan produk atau alat. Seluruh rangkaian proses pengembangan didokumentasikan secara sistematis guna menjamin transparansi dan validitas rancangan. Namun, saat ini banyak peneliti menggunakan pendekatan pengembangan produk atau alat untuk pengembangan berbasis teknologi
 
 Analisis, perencanaan, produksi, dan evaluasi dapat menjadi fokus penelitian design and development, selain itu penelitian design and development juga dapat berfokus pada desain dan pengembangan produk dan alat atau pada pengembangan, validasi, dan penggunaan model. Tujuan akhir dari penelitian desain dan pengembangan model merupakan adanya pengetahuan baru yang biasanya dalam bentuk model desain baru ataupun model desain yang sudah ada lalu disempurnakan.
 
-# Populasi 
-Populasi sendiri merupakan seluruh elemen atau kelompok yang memiliki kriteria sesuai dengan penelitian, populasi tidak hanya berfungsi sebagai objek penelitian tetapi juga sebagai sumber data yang dapat valid (Asrulla et al., 2023). Dalam penelitian design and development  populasi dapat berupa sumber yang non - manusia dan manusia untuk menjadi fokus penelitian.
+# Informan Penelitian 
+Informan sendiri merupakan seluruh elemen atau kelompok yang memiliki kriteria sesuai dengan penelitian, informan tidak hanya berfungsi sebagai objek penelitian tetapi juga sebagai sumber data yang dapat valid (Asrulla et al., 2023). Dalam penelitian design and development  informan dapat berupa sumber yang non - manusia dan manusia untuk menjadi fokus penelitian.
 
-Populasi dalam penelitian ini diklasifikasikan ke dalam dua kategori utama, yakni subjek manusia dan non-manusia. Entitas non-manusia yang menjadi populasi penelitian yaitu projek penelitian tersebu sedangkan, populasi manusia sendiri merupakan peran perancang (designer) dan pengembang (developer) (Richey & Klein, 2007).
+Informan dalam penelitian ini diklasifikasikan ke dalam dua kategori utama, yakni subjek manusia dan non-manusia. Entitas non-manusia yang menjadi informan penelitian yaitu projek penelitian tersebu sedangkan, informan manusia sendiri merupakan peran perancang (designer) dan pengembang (developer) (Richey & Klein, 2007).
 
-Populasi non-manusia direpresentasikan oleh infrastruktur teknologi Network Bound Disk Encryption (NBDE) yang menjadi objek utama dalam  data teknis. Sementara itu, populasi manusia dalam studi ini melibatkan praktisi dari divisi DevOps dari PT X, yang bertindak sebagai informan kunci dalam memberikan perspektif operasional terkait implementasi sistem tersebut.
+Informan non-manusia direpresentasikan oleh infrastruktur teknologi Network Bound Disk Encryption (NBDE) yang menjadi objek utama dalam  data teknis. Sementara itu, informan manusia dalam studi ini melibatkan praktisi dari divisi DevOps dari PT X, yang bertindak sebagai informan kunci dalam memberikan perspektif operasional terkait implementasi sistem tersebut.
+
+Purposive sampling merupakan strategi penentuan informan yang dilakukan secara sengaja oleh peneliti berdasarkan kriteria atau karakteristik spesifik yang relevan dengan tujuan penelitian. Teknik pengambilan sampel ini bertujuan untuk menjaring sumber data yang paling relevan dan kompeten guna mengeksplorasi situasi penelitian secara mendetail dan substansial (Richey & Klein, 2007). Agar informasi yang diperoleh memiliki kredibilitas dan kedalaman yang memadai, informan yang dipilih wajib memenuhi persyaratan kualifikasi di bawah ini:
+1. Pihak yang memahami mengenai sistem keamanan arsip digital.
+2. Pihak yang dapat menjelaskan terkait implementasi Network Bound Disk Encryption.
+3. Pihak yang bertanggung jawab dalam pengelolaan dan pemeliharaan arsip digital di lingkungan perusahaan.
+
+| No | Nama  | Jabatan        |
+|----|-------| ---------------|
+| 1  | Null  | DevOps engineer|
 
 # Teknik Pengumpulan Data 
-Dalam penelitian, teknik pengumpulan data digunakan oleh peneliti untuk mendapatkan informasi yang dibutuhkan dari berbagai sumber atau objek yang dibahas. Pengumpulan data pada jenis  penelitian desain dan pengembangan memiliki beberapa teknik yaitu catatan kerja, try out data, kuesioner, wawancara, observasi langsung, penggunaan website, penggunaan perangkat lunak, dan penggunaan laboratorium (Richey & Klein, 2007). Dalam penelitian ini data yang akan didapatkan melalui metode sebagai berikut: 
+Dalam penelitian, teknik pengumpulan data digunakan oleh peneliti untuk mendapatkan informasi yang dibutuhkan dari berbagai sumber atau objek yang dibahas. Pengumpulan data pada Metode  penelitian desain dan pengembangan memiliki beberapa teknik yaitu catatan kerja, try out data, kuesioner, wawancara, observasi langsung, penggunaan website, penggunaan perangkat lunak, dan penggunaan laboratorium (Richey & Klein, 2007). Dalam penelitian ini data yang akan didapatkan melalui metode sebagai berikut: 
 
 ## Data Uji Coba
 Data uji coba merupakan data yang diperoleh dengan secara langsung menggunakan sumber daya yang digunakan dan data ini menjelaskan keberhasilan dan kegagalan model (Richey & Klein, 2007). Dalam cakupan penelitian desain dan pengembangan, data eksperimental dihimpun melalui prosedur pengujian terstruktur yang diselenggarakan secara sistematis. 
