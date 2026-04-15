@@ -44,7 +44,7 @@ Sebagai langkah nyata, penelitian ini akan mengintegrasikan teori-teori Load Bal
 
 ## Identifikasi Masalah
 
-Peneliti melihat tidak adanya sistem otomasi perpustakaan yang stabil dalam menghadapi lonjakan permintaan buku digital yang tinggi di Organisasi N adalah masalah utama penelitian ini, seperti yang ditunjukkan dalam latar belakang.
+Peneliti melihat tidak adanya sistem otomasi perpustakaan yang stabil dalam menghadapi lonjakan permintaan akses pada perpustakaan.
 
 1. Distribusi Trafik yang Tidak Merata: Terjadinya penumpukan beban kerja hanya pada server tertentu, sementara sumber daya pada server lain tidak termanfaatkan secara optimal.
 2. Penurunan Performa Sistem: Munculnya kendala berupa respon aplikasi yang lambat atau latensi tinggi, terutama pada saat terjadi lonjakan jumlah pengguna secara bersamaan.
