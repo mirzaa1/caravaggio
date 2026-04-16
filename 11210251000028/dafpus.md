@@ -50,3 +50,5 @@ Rosdakarya.
 24. Hairunisya, Nanis. (2021). Metode Kualitatif Bagi Para Pemula Disertai Contoh - Contohnya. CV. Zahra Publisher Group.
 
 25. Anggito, Albi & Setiawan, Johan. (2018). Metode Penelitian Kualitatif. CV Jejak
+
+26. Judijanto, L., Wibowo, A., G., Karimuddin, Samsuddin, H., Patahuddin, A., Anggraeni, F., A., Raharjo, Simorangkir, F., M., A. (2024). Research Design : Pendekatan Kualitatif dan Kuantitatif. PT Sonpedia Publishing Indonesia.

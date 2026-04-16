@@ -85,8 +85,7 @@ Dalam penelitian kualitatif, pengujian keabsahan fokus pada aspek validitas, rel
 
 Oleh karena itu, pengujian keabsahan data kualitatif menjadi standar krusial untuk menjamin bahwa seluruh temuan penelitian memiliki derajat kepercayaan yang tinggi dan dapat dipertanggungjawabkan secara ilmiah.Tujuan utama dari pengujian keabsahan data bukanlah untuk mengejar kebenaran tunggal atau absolut atas suatu fenomena, melainkan untuk mengukur sejauh mana kedalaman pemahaman peneliti terhadap apa yang telah ditetapkan (Anggito & Setiawan, 2018).
 
-Dalam pengujian keabsahan data terdapat beberapa teknik, salah satu teknik yang paling sering digunakan adalah tringulasi. Menurut ...
-Berikut adalah jenis - jenis teknik tringulasi yang digunakan pada penelitian ini:  
+Dalam pengujian keabsahan data terdapat beberapa teknik, salah satu teknik yang paling sering digunakan adalah tringulasi. Triangulasi merupakan teknik krusial dalam metodologi kualitatif yang berfungsi memperkuat kepercayaan serta keabsahan temuan penelitian (Judijanto et al., 2024) . Dengan memanfaatkan berbagai perspektif, sumber data, atau metode pengumpulan yang berbeda, peneliti dapat meminimalkan bias personal dan memastikan bahwa simpulan yang dihasilkan memiliki landasan yang kokoh dan akurat. Berikut adalah jenis - jenis teknik tringulasi yang digunakan pada penelitian ini:  
 
 ## Tringulasi Sumber
 
