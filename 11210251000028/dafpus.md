@@ -48,3 +48,5 @@ Rosdakarya.
 23. Ratnaningtyas, E. M., Saputra, E., Suliwati, D., Nugroho, B. T. A., Aminy, M. H., Saputra, N., & Jahja, A. S. (2023). Metodologi penelitian kualitatif. No. Januari. Aceh: Yayasan Penerbit Muhammad Zaini, 3031-0369.
 
 24. Hairunisya, Nanis. (2021). Metode Kualitatif Bagi Para Pemula Disertai Contoh - Contohnya. CV. Zahra Publisher Group.
+
+25. Anggito, Albi & Setiawan, Johan. (2018). Metode Penelitian Kualitatif. CV Jejak

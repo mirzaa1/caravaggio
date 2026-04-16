@@ -81,7 +81,12 @@ Penyajian data adalah seluruh data yang telah direduksi kemudian disajikan dalam
 Tahap ini merupakan proses interpretasi data secara berkesinambungan selama penelitian berlangsung. Peneliti berupaya menangkap makna yang muncul dari data yang telah terkumpul, kemudian menguji kebenarannya melalui proses verifikasi dengan fakta-fakta objektif di lapangan.
 
 # Uji Keabsahan Data
+Dalam penelitian kualitatif, pengujian keabsahan fokus pada aspek validitas, reliabilitas, dan objektivitas langsung terhadap data yang diperoleh. Hal ini kontras dengan pendekatan kuantitatif yang lebih menitikberatkan pengujian pada instrumen penelitiannya. Dengan kata lain, jika penelitian kuantitatif menguji "alatnya", maka penelitian kualitatif menguji "hasil temuan" itu sendiri.
 
+Oleh karena itu, pengujian keabsahan data kualitatif menjadi standar krusial untuk menjamin bahwa seluruh temuan penelitian memiliki derajat kepercayaan yang tinggi dan dapat dipertanggungjawabkan secara ilmiah.Tujuan utama dari pengujian keabsahan data bukanlah untuk mengejar kebenaran tunggal atau absolut atas suatu fenomena, melainkan untuk mengukur sejauh mana kedalaman pemahaman peneliti terhadap apa yang telah ditetapkan (Anggito & Setiawan, 2018).
+
+Dalam pengujian keabsahan data terdapat beberapa teknik, salah satu teknik yang paling sering digunakan adalah tringulasi. Menurut ...
+Berikut adalah jenis - jenis teknik tringulasi yang digunakan pada penelitian ini:  
 
 ## Tringulasi Sumber
 
