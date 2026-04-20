@@ -106,7 +106,7 @@ Pendekatan ini mengintegrasikan fase desain dan pengembangan produk secara siste
 
 Fokus penelitian ini mencakup aspek analisis, perencanaan, produksi, hingga evaluasi terhadap efektivitas sistem. Hasil akhir dari penelitian diharapkan dapat memberikan kontribusi berupa pengetahuan baru dalam bentuk prototipe model desain sistem atau penyempurnaan model infrastruktur jaringan yang sudah ada.
 
-2. Informan Penelitian
+## Informan Penelitian
 Informan penelitian merupakan elemen atau kelompok yang memiliki kriteria relevan dan berfungsi sebagai sumber data yang valid (Asrulla dkk., 2023). Dalam penelitian Design and Development, informan diklasifikasikan ke dalam dua kategori: sumber non-manusia dan manusia (Richey & Klein, 2007).
 
 1. Informan Non-Manusia: Diwakili oleh infrastruktur teknologi Load Balancer yang menjadi objek utama dalam pengambilan data teknis serta pengujian performa sistem.
@@ -124,25 +124,33 @@ Berikut adalah rincian informan yang memenuhi kriteria di Organisasi N:
 |----|-------| ---------------|
 | 1  | Null  | DevOps engineer|
 
-3. Teknik Pengumpulan Data
+## Teknik Pengumpulan Data
 Teknik pengumpulan data diterapkan untuk menghimpun informasi komprehensif dari objek penelitian. Merujuk pada Richey dan Klein (2007), penelitian ini menggunakan teknik sebagai berikut:
 
-3.1 Data Uji Coba (Try Out Data)
+### Data Uji Coba (Try Out Data)
 Data uji coba diperoleh melalui pengujian langsung terhadap Load Balancer yang dikembangkan untuk mengevaluasi distribusi beban trafik dan stabilitas sistem (Richey & Klein, 2007). Proses ini mencakup observasi terhadap performa alat, identifikasi latensi atau hambatan teknis, serta pengujian mekanisme failover saat terjadi lonjakan trafik.
 
-3.2 Penggunaan Laboratorium
+### Penggunaan Laboratorium
 Pengumpulan data dilakukan di lingkungan laboratorium untuk menunjang kebutuhan teknologi yang kompleks. Infrastruktur laboratorium mencakup spesifikasi perangkat keras dan perangkat lunak sebagai berikut:
 
-Perangkat Keras	Perangkat Lunak
-2 Monitor, 6 Server	Sistem Operasi Arch Linux
-2 Keyboard, 2 Mouse	GitHub, Obsidian
-1 Speaker, 1 Switch Cisco	Perekam Layar (Screen Recorder)
-1 Mikrotik, 1 Router Wireless	
-3.3 Wawancara
+| Perangkat Keras    | Perangkat Lunak          |
+|--------------------|--------------------------|
+| 2 monitor          | Github                   |
+| 6 peladen (server) | sistem operasi Archlinux |
+| 2 keyboard         | Obsidian                 |
+| 2 mouse            | Perekam layar            |
+| 1 speaker          |                          |
+| 1 switch cisco     |                          |
+| 1 mikrotik         |                          |
+| 1 router wireless  |                          |
+
+### Wawancara
 Wawancara dilakukan secara terstruktur dengan narasumber untuk menggali data mendalam terkait kebutuhan sistem (Moleong, 2016). Tahapan ini difokuskan pada analisis penilaian kebutuhan (needs assessment) guna memahami efektivitas konfigurasi Load Balancer yang diimplementasikan (Richey & Klein, 2007).
-5. Teknik Analisis Data
+
+## Teknik Analisis Data
 Data yang telah dikumpulkan kemudian dianalisis melalui proses berikut untuk memastikan validitas hasil penelitian:
-4.1 Observasi Data Eksperimen
+
+## Observasi Data Eksperimen
 Observasi dilakukan dengan mengamati secara langsung kinerja sistem Load Balancer yang telah dikembangkan. Fokus utama pengamatan meliputi:
 
 1. Efisiensi distribusi beban kerja antar server.
