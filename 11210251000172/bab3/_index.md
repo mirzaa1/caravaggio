@@ -1,88 +1,155 @@
 # METODE PENELITIAN
 
-## Metode Penelitian
-Metode penelitian yang diimplementasikan dalam studi ini adalah Design and Development Research (DDR). Menurut Richey dan Klein (2007), DDR merupakan studi sistematis tentang perancangan, pengembangan, dan evaluasi program, proses, dan produk teknologi yang harus memenuhi kriteria efektivitas, presisi, dan validitas. Pendekatan ini dipilih karena penelitian ini bertujuan untuk menghasilkan sebuah produk teknologi berupa arsitektur Load Balancer yang dirancang secara khusus untuk memecahkan masalah nyata di Organisasi N. Berbeda dengan penelitian kualitatif yang mendeskripsikan fenomena atau kuantitatif yang menguji korelasi variabel, DDR berfokus pada proses penciptaan solusi yang dapat divalidasi secara empiris melalui serangkaian tahapan pengembangan yang terukur.
+# Metode Penelitian
+Metode penelitian yang digunakan dalam penelitian ini adalah design and development dengan pendekatan kualitatif. Penelitian desain dan pengembangan merupakan kajian yang menyeluruh tentang proses desain, pengembangan, dan evaluasi dengan tujuan menciptakan dasar empiris untuk pembuatan produk, alat instruksional atau non-instruksional, serta model baru atau model yang sudah ada lalu diperbarui dalam pengembangannya (Richey & Klein, 2007). 
 
-Penelitian ini diklasifikasikan ke dalam kategori Product and Tool Research (Tipe I) berdasarkan taksonomi Richey dan Klein. Fokus utama dari kategori ini adalah pada siklus hidup pengembangan produk spesifik, mulai dari tahap analisis kebutuhan awal hingga tahap akhir berupa evaluasi fungsi. Penulis menggunakan kerangka DDR ini sebagai landasan ilmiah untuk membuktikan bahwa setiap keputusan teknis dalam perancangan sistem Load Balancer didasarkan pada data lapangan dan teori jaringan yang kuat, bukan sekadar instalasi perangkat lunak tanpa metodologi yang jelas (Richey & Klein, 2007).
+Metode penelitian ini mengambil pendekatan yang saling berhubungan dalam fase desain serta pengembangan produk atau alat. Seluruh rangkaian proses pengembangan didokumentasikan secara sistematis guna menjamin transparansi dan validitas rancangan. Namun, saat ini banyak peneliti menggunakan pendekatan pengembangan produk atau alat untuk pengembangan berbasis teknologi
 
-## Prosedur Pengembangan Sistem
-Prosedur penelitian ini mengikuti empat fase esensial dalam metodologi DDR yang disusun secara linier namun bersifat evaluatif. Penjelasan mendalam mengenai setiap tahapan tersebut adalah sebagai berikut:
+Analisis, perencanaan, produksi, dan evaluasi dapat menjadi fokus penelitian design and development, selain itu penelitian design and development juga dapat berfokus pada desain dan pengembangan produk dan alat atau pada pengembangan, validasi, dan penggunaan model. Tujuan akhir dari penelitian desain dan pengembangan model merupakan adanya pengetahuan baru yang biasanya dalam bentuk model desain baru ataupun model desain yang sudah ada lalu disempurnakan.
 
-1. Tahap Analisis (Analysis): Fase awal ini difokuskan pada kegiatan identifikasi dan analisis kebutuhan sistem secara menyeluruh di Organisasi N. Penulis melakukan observasi terhadap infrastruktur server yang berjalan saat ini untuk memetakan kapasitas perangkat keras, konfigurasi perangkat lunak, dan pola trafik harian pemustaka. Tahap ini juga mencakup studi literatur mengenai profil beban kerja pada sistem otomasi perpustakaan guna menentukan parameter ambang batas (threshold) kapan sebuah server dianggap mengalami kelebihan beban (overload). Hasil dari analisis ini adalah daftar spesifikasi teknis dan fungsional yang harus dipenuhi oleh sistem penyeimbang beban yang akan dikembangkan.
-2. Tahap Desain (Design): Tahap desain merupakan proses penerjemahan hasil analisis ke dalam bentuk cetak biru (blueprint) arsitektur jaringan. Penulis merancang skema distribusi trafik yang melibatkan Load Balancer sebagai gerbang utama bagi setiap permintaan akses yang masuk. Pada fase ini, penulis menentukan topologi jaringan yang paling efisien serta memilih model algoritma distribusi (seperti Round Robin, Least Connection, atau Weighted) yang akan diuji kinerjanya. Desain juga mencakup perencanaan strategi redundansi data dan mekanisme deteksi kegagalan server untuk menjamin bahwa seluruh komponen dalam klaster dapat bekerja secara harmonis demi mencapai kondisi High Availability.
-3. Tahap Pengembangan (Development): Tahap pengembangan adalah fase di mana seluruh rancangan desain diimplementasikan ke dalam bentuk fisik atau virtual. Penulis melakukan instalasi sistem operasi, konfigurasi Web Server, dan pemasangan perangkat lunak Load Balancer pada lingkungan pengujian yang menyerupai kondisi asli di Organisasi N. Proses ini mencakup pengaturan parameter backend server, sinkronisasi sesi pengguna (session persistence), serta konfigurasi protokol pemeriksaan kesehatan (health check). Di akhir tahap ini, dihasilkan sebuah purwarupa (prototype) sistem informasi perpustakaan yang memiliki kemampuan manajemen trafik mandiri dan siap untuk masuk ke tahap pengujian performa.
-4. Tahap Evaluasi (Evaluation): Fase evaluasi bertujuan untuk memvalidasi efektivitas produk yang telah dibangun terhadap masalah awal yang diidentifikasi. Penulis melakukan pengujian beban (load testing) dan pengujian ketahanan (stress testing) dengan menggunakan alat simulasi trafik. Parameter yang diuji meliputi kecepatan respon server dalam milidetik, jumlah permintaan yang berhasil diproses per detik (throughput), serta keberhasilan mekanisme failover saat salah satu server dinonaktifkan secara paksa. Hasil evaluasi ini akan memberikan bukti empiris mengenai sejauh mana sistem Load Balancer yang dikembangkan mampu memenuhi hukum "Save the time of the user" dari Alireza Noruzi (Noruzi, 2004).
+# Informan Penelitian 
+Informan sendiri merupakan seluruh elemen atau kelompok yang memiliki kriteria sesuai dengan penelitian, informan tidak hanya berfungsi sebagai objek penelitian tetapi juga sebagai sumber data yang dapat valid (Asrulla et al., 2023). Dalam penelitian design and development  informan dapat berupa sumber yang non - manusia dan manusia untuk menjadi fokus penelitian.
 
-## Subjek dan Objek Penelitian
-Subjek penelitian ini mencakup infrastruktur server dan administrator teknologi informasi di Organisasi N yang bertanggung jawab atas keberlangsungan sistem informasi perpustakaan. Objek penelitian secara spesifik adalah implementasi mekanisme Load Balancing beserta algoritma distribusinya yang diterapkan pada klaster Web Server. Penelitian dilakukan di lingkungan internal Organisasi N untuk memastikan bahwa setiap pengujian mencerminkan kondisi jaringan dan karakteristik data koleksi digital yang sebenarnya, sehingga solusi yang dihasilkan memiliki tingkat akurasi dan keberterimaan yang tinggi bagi organisasi.
+Informan dalam penelitian ini diklasifikasikan ke dalam dua kategori utama, yakni subjek manusia dan non-manusia. Entitas non-manusia yang menjadi informan penelitian yaitu projek penelitian tersebu sedangkan, informan manusia sendiri merupakan peran perancang (designer) dan pengembang (developer) (Richey & Klein, 2007).
 
-## Instrumen Pengumpulan Data
-Dalam kerangka DDR, instrumen penelitian berfungsi sebagai alat untuk menangkap data proses selama pengembangan dan data hasil selama evaluasi. Penulis menggunakan kombinasi instrumen teknis sebagai berikut:
+Informan non-manusia direpresentasikan oleh infrastruktur teknologi Network Bound Disk Encryption (NBDE) yang menjadi objek utama dalam  data teknis. Sementara itu, informan manusia dalam studi ini melibatkan praktisi dari divisi DevOps dari PT X, yang bertindak sebagai informan kunci dalam memberikan perspektif operasional terkait implementasi sistem tersebut.
 
-1. Software Testing Tools: Perangkat lunak khusus yang digunakan untuk menyuntikkan trafik simulasi dalam jumlah besar guna mendapatkan metrik performa sistem secara kuantitatif dan presisi.
-2. Lembar Observasi Teknis: Protokol tertulis yang digunakan penulis untuk mencatat setiap anomali, keberhasilan, maupun kegagalan sistem selama proses konfigurasi dan uji coba failover.
-3. Log System Monitor: Data rekaman aktivitas server yang dianalisis untuk melihat perilaku Load Balancer dalam membagi paket data ke masing-masing node server secara real-time.
-4. Wawancara dan Dokumentasi: Pengumpulan data dari dokumen teknis organisasi dan sesi diskusi dengan staf TI guna memahami batasan infrastruktur dan kebijakan akses data di Organisasi N.
+Purposive sampling merupakan strategi penentuan informan yang dilakukan secara sengaja oleh peneliti berdasarkan kriteria atau karakteristik spesifik yang relevan dengan tujuan penelitian. Teknik pengambilan sampel ini bertujuan untuk menjaring sumber data yang paling relevan dan kompeten guna mengeksplorasi situasi penelitian secara mendetail dan substansial (Richey & Klein, 2007). Agar informasi yang diperoleh memiliki kredibilitas dan kedalaman yang memadai, informan yang dipilih wajib memenuhi persyaratan kualifikasi di bawah ini:
+1. Pihak yang memahami mengenai sistem keamanan arsip digital.
+2. Pihak yang dapat menjelaskan terkait implementasi Network Bound Disk Encryption.
+3. Pihak yang bertanggung jawab dalam pengelolaan dan pemeliharaan arsip digital di lingkungan perusahaan.
 
-## Teknik Analisis Data
-Data yang terkumpul akan dianalisis menggunakan teknik deskriptif-komparatif guna menarik kesimpulan mengenai efektivitas pengembangan sistem. Penulis akan membandingkan performa sistem pada dua kondisi berbeda: pertama, kondisi sebelum menggunakan Load Balancer (basis data performa server tunggal), dan kedua, kondisi setelah implementasi Load Balancer dengan berbagai algoritma. Hasil analisis akan disajikan dalam bentuk grafik perbandingan response time dan tabel efisiensi throughput. Analisis ini tidak hanya bertujuan untuk melihat angka teknis, tetapi juga untuk memberikan interpretasi mendalam mengenai kaitan antara hasil pengujian dengan peningkatan ketersediaan layanan koleksi di Organisasi N secara berkelanjutan.
+Berikut merupakan informan yang sesuai dengan kriteria pada perusahaan PT X: 
 
-# versi lama
+| No | Nama  | Jabatan         |
+|----|-------| --------------- |
+| 1  | Null  | DevOps engineer |
 
-## Jenis Penelitian
+# Teknik Pengumpulan Data 
+Dalam penelitian, teknik pengumpulan data digunakan oleh peneliti untuk mendapatkan informasi yang dibutuhkan dari berbagai sumber atau objek yang dibahas. Pengumpulan data pada Metode  penelitian desain dan pengembangan memiliki beberapa teknik yaitu catatan kerja, try out data, kuesioner, wawancara, observasi langsung, penggunaan website, penggunaan perangkat lunak, dan penggunaan laboratorium (Richey & Klein, 2007). Dalam penelitian ini data yang akan didapatkan melalui metode sebagai berikut: 
 
-Jenis penelitian ini akan menggunakan design and development dengan pendekatan berbasis pengembangan model. Penelitian pengembangan desain adalah studi komprehensif tentang proses desain, pengembangan, dan evaluasi yang bertujuan untuk memberikan landasan empiris bagi pengembangan produk, alat pendidikan atau non-pendidikan, dan model baru atau yang sudah ada; Pengembangan produk sendiri (Richey & Klein, 2007).
+## Data Uji Coba
+Data uji coba merupakan data yang diperoleh dengan secara langsung menggunakan sumber daya yang digunakan dan data ini menjelaskan keberhasilan dan kegagalan model (Richey & Klein, 2007). Dalam cakupan penelitian desain dan pengembangan, data eksperimental dihimpun melalui prosedur pengujian terstruktur yang diselenggarakan secara sistematis. 
 
-Analisis, perencanaan, produksi, & penilaian bisa sebagai penekanan penelitian design and development, selain itu penelitian design and development pula bisa serius dalam desain & pengembangan produk & indera atau dalam pengembangan, validasi, & penggunaan model. Tujuan akhir dari penelitian desain dan pengembangan model adalah untuk menciptakan pengetahuan baru, biasanya dalam bentuk model desain baru atau yang sudah ada, yang kemudian disempurnakan. Tujuan akhir dari penelitian desain dan pengembangan model adalah untuk menciptakan pengetahuan baru, biasanya dalam bentuk model desain baru atau yang sudah ada, yang kemudian disempurnakan. 
+Fase ini mencakup observasi mendalam terhadap performa produk atau alat, identifikasi hambatan teknis yang timbul, serta solusi terhadap hambatan yang terjadi saat pengujian. Dengan demikian, data tersebut tidak hanya merepresentasikan hasil akhir, namun juga memberikan penjelasan mengenai dinamika proses dan anomali sistemik yang terjadi selama pengujian berlangsung. 
 
-Dalam konteks penelitian ini, pendekatan DDR diaplikasikan untuk merancang dan mengembangkan arsitektur infrastruktur perpustakaan digital berbasis kontainer (Docker) yang dioptimalkan dengan algoritma penyeimbangan beban. Proses ini mengikuti empat tahapan utama sesuai kerangka kerja Richey dan Klein (2007), yaitu:
+## Penggunaan Laboratorium
+Pengumpulan data menggunakan laboratorium digunakan pada peneliti jika membutuhkan teknologi yang canggih. Dalam praktiknya, pemilihan dan standarisasi laboratorium bersifat variatif, di mana ketersediaan pendanaan merupakan variabel penentu dalam penyediaan infrastruktur penelitian yang memadai guna menunjang akurasi hasil pengembangan (Richey & Klein, 2007) .
 
-1. Analisis (Analysis)
-Tahap awal ini difokuskan pada identifikasi hambatan teknis pada server SLiMS konvensional yang sering mengalami kegagalan akses saat beban trafik tinggi. Analisis kebutuhan sistem mencakup spesifikasi image Docker yang diperlukan, serta penentuan bobot parameter dalam algoritma Dynamic Weighted Round Robin yang akan diimplementasikan untuk menjamin High Availability.
+Spesifikasi infrastruktur laboratorium yang digunakan dalam penelitian ini diuraikan secara lengkap. Penjabaran ini mencakup seluruh perangkat keras dan perangkat lunak yang membentuk lingkungan laboratorium. Berikut spesifikasi laboratorium pada penelitian ini :
 
-2. Desain (Design)
-Pada tahap ini, dirancang sebuah model infrastruktur multi-container menggunakan Docker Compose. Rancangan ini menempatkan sebuah Load Balancer sebagai gerbang utama yang mendistribusikan trafik ke beberapa instans kontainer SLiMS secara dinamis. Desain model ini bertujuan untuk memastikan bahwa distribusi beban kerja tidak hanya berdasarkan urutan, tetapi juga mempertimbangkan kapasitas resource (CPU dan RAM) dari masing-masing kontainer.
+| Perangkat Keras    | Perangkat Lunak          |
+|--------------------|--------------------------|
+| 2 monitor          | Github                   |
+| 6 peladen (server) | Sistem Operasi Archlinux |
+| 2 keyboard         | Obsidian                 |
+| 2 mouse            | Perekam layar            |
+| 1 speaker          |                          |
+| 1 switch cisco     |                          |
+| 1 mikrotik         |                          |
+| 1 router wireless  |                          |
 
-3. Pengembangan (Development)
-Tahap produksi melibatkan pembangunan (build) dan penyebaran (deployment) infrastruktur di dalam lingkungan Docker. Pada fase ini, skrip konfigurasi dieksekusi untuk menciptakan ekosistem perpustakaan digital yang terisolasi namun terintegrasi. Algoritma Dynamic Weighted Round Robin dikonfigurasikan pada tingkat jaringan kontainer untuk memastikan komunikasi antar-node berjalan sesuai dengan model yang telah dirancang.
+## Wawancara
+Wawancara didefinisikan sebagai sebuah metode interaksi verbal yang diselenggarakan secara terstruktur dengan tujuan spesifik untuk perolehan data penelitian. Proses ini melibatkan sinergi antara dua pihak utama, yakni pewawancara (interviewer) yang berperan sebagai penanya sekaligus pengarah pembicaraan, dan narasumber (informant) yang bertindak sebagai penyedia informasi atau jawaban atas serangkaian stimulus pertanyaan yang diajukan (Moleong, 2016).
 
-4. Evaluasi (Evaluation)
-Tahap akhir adalah validasi empiris terhadap model yang dikembangkan. Untuk mendapatkan data yang akurat dan objektif di tahun 2026 ini, penelitian menggunakan dua instrumen pengumpulan data utama:
+Tahapan wawancara dikembangkan lebih lanjut dengan analisis penilaian kebutuhan (needs assessment). Fokus utama dalam fase ini adalah untuk mengeksplorasi kemampuan dasar yang harus dimiliki oleh seorang perancang guna mencapai efektivitas dan keberhasilan dalam penilaian kebutuhan (Richey & Klein, 2007).
 
-Apache JMeter: Instrumen ini digunakan untuk melakukan pengujian beban (load testing) dan pengujian stres (stress testing). JMeter akan mensimulasikan ratusan hingga ribuan akses pemustaka secara simultan ke pangkalan data SLiMS. Data yang dikumpulkan melalui instrumen ini meliputi Response Time, Throughput, dan Error Rate untuk mengukur efisiensi distribusi beban.
+Pengumpulan data dengan teknik wawancara juga meningkatkan kredibilitas dan validitas temuan peneliti terhadap informasi yang dikumpulkan. Melalui interaksi secara langsung ini, peneliti memperoleh kapabilitas untuk mendalami perspektif partisipanvsecara lebih lengkap, baik dalam konteks situasi tertentu maupun fenomena spesifik yang sedang dikaji.
 
-Observasi Sistem secara Real-Time: Observasi dilakukan dengan memantau metrik performa internal pada Docker Engine menggunakan alat monitoring. Observasi ini bertujuan untuk mencatat pemanfaatan sumber daya (Resource Usage) pada setiap kontainer, memastikan bahwa tidak ada satu node pun yang mengalami bottleneck sementara node lainnya dalam kondisi idle.
 
-Melalui rangkaian tahapan DDR ini, diharapkan tercipta sebuah model infrastruktur perpustakaan digital yang tidak hanya mutakhir secara teknologi, tetapi juga memiliki landasan empiris yang kuat dalam menjaga stabilitas layanan informasi bagi masyarakat luas.
+# Teknik Analisis Data 
+Setelah data dikumpulkan dengan teknik uji coba, penggunaan laboratorium, dan wawancara. Kemudian dianalisis dengan tujuan untuk menghasilkan data valid yang akan ditampilkan dalam hasil penelitian. Proses analisis yang digunakan sebagai berikut:
 
-## Populasi
+## Observasi Data Eksperimen
+Observasi data eksperimen dilakukan dengan cara mengamati secara langsung hasil dari implementasi sistem NBDE yang telah dikembangkan. Observasi ini bertujuan untuk mengetahui bagaimana sistem bekerja dalam kondisi nyata, baik saat sistem terhubung dengan jaringan maupun saat tidak terhubung. Dengan demikian, peneliti dapat memperoleh data yang objektif mengenai performa dan keamanan sistem.
 
-Populasi sendiri mencakup seluruh unsur atau kelompok yang kriterianya sesuai dengan penelitian. Populasi tidak hanya berfungsi sebagai subjek penelitian tetapi juga sebagai sumber data yang terverifikasi (Asrulla et al., 2023). Dalam penelitian design and development populasi bisa menggunakan sumber yang bukan manusia untuk dijadikan fokus penelitian.
+Dalam proses observasi, peneliti fokus pada beberapa aspek penting, seperti keberhasilan proses autentikasi jaringan, kemampuan sistem dalam membuka enkripsi secara otomatis, serta tingkat keamanan data terhadap akses yang tidak sah. Observasi dilakukan tanpa intervensi langsung terhadap sistem, sehingga data yang diperoleh mencerminkan kondisi sebenarnya.
 
-## Teknik Pengumpulan Data
+Hasil observasi kemudian digunakan sebagai dasar untuk menilai apakah implementasi NBDE telah memenuhi tujuan penelitian. Dengan pendekatan ini, peneliti dapat mengidentifikasi kelebihan dan kekurangan sistem secara lebih akurat, sehingga hasil analisis menjadi lebih valid dan dapat dipertanggungjawabkan (Moleong, 2016).
 
-Dalam penelitian, teknik pengumpulan data digunakan peneliti untuk memperoleh informasi yang diperlukan dari berbagai sumber dan objek yang dibahas. Pengumpulan data dalam penelitian desain dan pengembangan mencakup berbagai teknik, antara lain catatan kerja, survei dan kuesioner, wawancara, observasi langsung, penggunaan website, penggunaan perangkat lunak, dan penggunaan laboratorium (Richey & Klein, 2007). Pada penelitian ini data yang didapatkan akan melalui metode Try-out data. 
+## Seleksi Data Eksperimen 
+Seleksi data eksperimen merupakan tahap penyaringan data yang telah diperoleh dari hasil observasi dan dokumentasi eksperimen. Pada tahap ini, peneliti memilih data yang relevan dengan tujuan penelitian serta memiliki tingkat keakuratan yang tinggi. Proses seleksi ini penting untuk memastikan bahwa data yang digunakan dalam analisis benar-benar mencerminkan kondisi sistem yang sebenarnya.
 
-Try-out data adalah data yang didapatkan secara langsung memakai sumber daya yang dipakai dan data ini akan menjelaskan kesuksesan dan kegagalan model. Berikut cara yang digunakan untuk memperoleh try-out data:
+Dalam penelitian ini, data yang diseleksi meliputi hasil pengujian sistem, tangkapan layar proses implementasi, serta catatan eksperimen yang berkaitan langsung dengan penerapan NBDE. Data yang tidak relevan atau memiliki inkonsistensi akan dieliminasi agar tidak mempengaruhi hasil analisis. Proses ini membantu meningkatkan kualitas data yang digunakan dalam penelitian.
+Selain itu, seleksi data juga bertujuan untuk menyederhanakan data yang kompleks sehingga lebih mudah dianalisis. Dengan data yang telah disaring, peneliti dapat fokus pada informasi yang paling penting dan signifikan, sehingga hasil analisis menjadi lebih terarah dan mendalam.
 
-a. Penggunaan Perangkat Lunak
-Penggunaan perangkat lunak untuk mengumpulkan data dalam penelitian desain dan pengembangan mengacu pada penggunaan aplikasi atau program komputer. Penggunaan perangkat lunak ini untuk mengumpulkan, mengelola, dan menganalisis data yang berkaitan dengan proses pembuatan produk, alat, dan model.
-Perangkat lunak ini digunakan untuk membuat desain load balancer untuk pemerataan beban server, tetapi selain itu juga dapat menggunakan alat ini untuk mendapatkan hasil desain tersebut.
- Data yang dikumpulkan berupa screenshot pada saat proses pengembangan model, pada saat pengujian model, dan pada saat implementasi model.
+## Reduksi Data
+Reduksi data merupakan tahap analisis yang melibatkan proses penyaringan, pengelompokan, serta pengorganisasian data mentah guna menonjolkan poin-poin esensial dan pola-pola yang relevan dengan tujuan penelitian (Fiantika et al., 2022).Lebih dari sekadar penyederhanaan, proses ini merupakan bentuk analisis tajam yang menuntut peneliti untuk melakukan interpretasi awal terhadap fenomena yang ditemukan di lapangan.
 
-b. Observasi
-Observasi merupakan metode pengumpulan data yang melibatkan pengamatan pribadi terhadap subjek & konteks penelitian (Ardiyansyah et al., 2023). Dalam penelitian ilmiah, observasi dilakukan secara eksklusif tanpa hegemoni dari peneliti buat menerima data yang objektif dan sistematis mengenai subjek atau objek penelitian.
-Observasi yang dilakukan pada penelitian ini untuk mendukung uji coba contoh yang didesain oleh peneliti dan untuk mengumpulkan data output menurut contoh sebagai akibatnya bisa diperoleh berita yang sesungguhnya.
+## Kategorisasi Data
+Kategorisasi data merupakan proses analitis yang memberikan penjelasan sistematis mengenai kesamaan dan perbedaan dalam kumpulan data berdasarkan kelompok yang telah ditentukan. Melalui tahap ini, peneliti dapat mengorganisasikan informasi yang tersebar ke dalam kategori-kategori tematik yang saling berkaitan, sehingga memudahkan identifikasi pola-pola kunci yang relevan dengan fokus penelitian (Hairunisya, 2021).
 
-## Teknik Analisis Data
+## Penyajian Data
+Penyajian data adalah seluruh data yang telah direduksi kemudian disajikan dalam bentuk narasi deskriptif yang sistematis. Penyajian data dalam bentuk rangkaian kata dan kalimat ini bertujuan untuk mengorganisasikan informasi yang kompleks ke dalam format yang lebih koheren, sehingga memudahkan peneliti dalam memahami dinamika fenomena yang terjadi serta memetakan keterkaitan antarvariabel penelitian (Ratnaningtyas et al., 2022).
+## Penarikan Kesimpulan
+Tahap ini merupakan proses interpretasi data secara berkesinambungan selama penelitian berlangsung. Peneliti berupaya menangkap makna yang muncul dari data yang telah terkumpul, kemudian menguji kebenarannya melalui proses verifikasi dengan fakta-fakta objektif di lapangan.
 
-Setelah data dikumpulkan melalui perangkat lunak dan observasi, kemudian dianalisis untuk menghasilkan data yang sah akan ditampilkan dalam hasil penelitian. Berikut adalah cara analisisnya:
-1. Pencitraan Model Awal
-2. Catatan Eksperimen
-3. Observasi Data Eksperimen
-4. Seleksi Data Eksperimen
-5. Implementasi Data Eksperimen
-6. Deskripsi Protype
+# Uji Keabsahan Data
+Dalam penelitian kualitatif, pengujian keabsahan fokus pada aspek validitas, reliabilitas, dan objektivitas langsung terhadap data yang diperoleh. Hal ini kontras dengan pendekatan kuantitatif yang lebih menitikberatkan pengujian pada instrumen penelitiannya. Dengan kata lain, jika penelitian kuantitatif menguji "alatnya", maka penelitian kualitatif menguji "hasil temuan" itu sendiri.
+
+Oleh karena itu, pengujian keabsahan data kualitatif menjadi standar krusial untuk menjamin bahwa seluruh temuan penelitian memiliki derajat kepercayaan yang tinggi dan dapat dipertanggungjawabkan secara ilmiah.Tujuan utama dari pengujian keabsahan data bukanlah untuk mengejar kebenaran tunggal atau absolut atas suatu fenomena, melainkan untuk mengukur sejauh mana kedalaman pemahaman peneliti terhadap apa yang telah ditetapkan (Anggito & Setiawan, 2018).
+
+Dalam pengujian keabsahan data terdapat beberapa teknik, salah satu teknik yang paling sering digunakan adalah tringulasi. Triangulasi merupakan teknik krusial dalam metodologi kualitatif yang berfungsi memperkuat kepercayaan serta keabsahan temuan penelitian (Judijanto et al., 2024) . Dengan memanfaatkan berbagai perspektif, sumber data, atau metode pengumpulan yang berbeda, peneliti dapat meminimalkan bias personal dan memastikan bahwa simpulan yang dihasilkan memiliki landasan yang kokoh dan akurat. Berikut adalah jenis - jenis teknik tringulasi yang digunakan pada penelitian ini:  
+
+## Tringulasi Sumber
+Triangulasi sumber diterapkan dengan menggunakan dari salah satu teknik pengumpulan data, seperti wawancara mendalam, namun dilakukan terhadap tiga narasumber yang berbeda guna mengonfirmasi kebenaran informasi tersebut. Teknik ini digunakan untuk memvalidasi data yang sudah dianalisis kepada 3 narasumber untuk menetapkan data yang akurat.
+
+## Tringulasi Teknik
+Kredibilitas data dapat diuji melalui strategi triangulasi teknik, yakni proses verifikasi informasi dari sumber yang sama menggunakan berbagai metode pengumpulan data, seperti analisis data uji coba, penggunaan laboratorium, dan wawancara. Apabila ditemukan ketidaksamaan hasil dari ketiga teknik tersebut, maka diperlukan diskusi mendalam lebih lanjut guna menetapkan data mana yang paling akurat.
+
+## Tringulasi Waktu
+Teknik ini dilakukan untuk melakukan pengecekan data dari berbagai teknik pengumpulan data seperti wawancara, penggunaan laboratorium, dan data uji coba dalam waktu yang berbeda - beda atau pada situasi tertentu. Jika data yang dihasilkan dari teknik ini tetap konsisten atau sama, maka data ini dapat dipastikan kebenarannya.
+
+Metode yang digunakan dalam penelitian ini adalah Design and Development (D&D) dengan pendekatan kualitatif. Penelitian desain dan pengembangan merupakan kajian menyeluruh mengenai proses perancangan, pengembangan, dan evaluasi dengan tujuan membangun landasan empiris bagi penciptaan produk, perangkat instruksional maupun non-instruksional, serta pengembangan model baru atau penyempurnaan model yang telah ada (Richey & Klein, 2007).
+
+Pendekatan ini mengintegrasikan fase desain dan pengembangan produk secara sistematis, di mana seluruh rangkaian proses dokumentasi dilakukan guna menjamin transparansi serta validitas rancangan. Dalam konteks ini, metode D&D diaplikasikan untuk pengembangan infrastruktur teknologi informasi yang adaptif.
+
+Fokus penelitian ini mencakup aspek analisis, perencanaan, produksi, hingga evaluasi terhadap efektivitas sistem. Hasil akhir dari penelitian diharapkan dapat memberikan kontribusi berupa pengetahuan baru dalam bentuk prototipe model desain sistem atau penyempurnaan model infrastruktur jaringan yang sudah ada.
+
+2. Informan Penelitian
+Informan penelitian merupakan elemen atau kelompok yang memiliki kriteria relevan dan berfungsi sebagai sumber data yang valid (Asrulla dkk., 2023). Dalam penelitian Design and Development, informan diklasifikasikan ke dalam dua kategori: sumber non-manusia dan manusia (Richey & Klein, 2007).
+
+1. Informan Non-Manusia: Diwakili oleh infrastruktur teknologi Load Balancer yang menjadi objek utama dalam pengambilan data teknis serta pengujian performa sistem.
+2. Informan Manusia: Melibatkan praktisi dari divisi DevOps Organisasi N yang bertindak sebagai perancang (designer) dan pengembang (developer).
+
+Pemilihan informan dilakukan melalui teknik purposive sampling, yakni penentuan sumber data secara sengaja berdasarkan kriteria spesifik yang relevan dengan tujuan penelitian (Richey & Klein, 2007). Kriteria informan dalam penelitian ini meliputi:
+
+1. Pihak yang memahami arsitektur dan manajemen trafik jaringan.
+2. Pihak yang memiliki kompetensi dalam implementasi dan konfigurasi Load Balancer.
+3. Pihak yang bertanggung jawab atas ketersediaan (availability) dan stabilitas sistem di lingkungan Organisasi N.
+
+Berikut adalah rincian informan yang memenuhi kriteria di Organisasi N:
+
+| No | Nama  | Jabatan        |
+|----|-------| ---------------|
+| 1  | Null  | DevOps engineer|
+
+3. Teknik Pengumpulan Data
+Teknik pengumpulan data diterapkan untuk menghimpun informasi komprehensif dari objek penelitian. Merujuk pada Richey dan Klein (2007), penelitian ini menggunakan teknik sebagai berikut:
+
+3.1 Data Uji Coba (Try Out Data)
+Data uji coba diperoleh melalui pengujian langsung terhadap Load Balancer yang dikembangkan untuk mengevaluasi distribusi beban trafik dan stabilitas sistem (Richey & Klein, 2007). Proses ini mencakup observasi terhadap performa alat, identifikasi latensi atau hambatan teknis, serta pengujian mekanisme failover saat terjadi lonjakan trafik.
+
+3.2 Penggunaan Laboratorium
+Pengumpulan data dilakukan di lingkungan laboratorium untuk menunjang kebutuhan teknologi yang kompleks. Infrastruktur laboratorium mencakup spesifikasi perangkat keras dan perangkat lunak sebagai berikut:
+
+Perangkat Keras	Perangkat Lunak
+2 Monitor, 6 Server	Sistem Operasi Arch Linux
+2 Keyboard, 2 Mouse	GitHub, Obsidian
+1 Speaker, 1 Switch Cisco	Perekam Layar (Screen Recorder)
+1 Mikrotik, 1 Router Wireless	
+3.3 Wawancara
+Wawancara dilakukan secara terstruktur dengan narasumber untuk menggali data mendalam terkait kebutuhan sistem (Moleong, 2016). Tahapan ini difokuskan pada analisis penilaian kebutuhan (needs assessment) guna memahami efektivitas konfigurasi Load Balancer yang diimplementasikan (Richey & Klein, 2007).
+5. Teknik Analisis Data
+Data yang telah dikumpulkan kemudian dianalisis melalui proses berikut untuk memastikan validitas hasil penelitian:
+4.1 Observasi Data Eksperimen
+Observasi dilakukan dengan mengamati secara langsung kinerja sistem Load Balancer yang telah dikembangkan. Fokus utama pengamatan meliputi:
+
+1. Efisiensi distribusi beban kerja antar server.
+2. Kemampuan sistem dalam menjaga ketersediaan layanan (high availability).
+3. Respons sistem terhadap simulasi lonjakan trafik atau kegagalan node server.
+
+Analisis dilakukan tanpa intervensi langsung terhadap sistem yang berjalan agar data yang diperoleh secara akurat mencerminkan performa nyata dari implementasi Load Balancer tersebut.
 
 ## Tempat dan Jadwal Penelitian 
 
